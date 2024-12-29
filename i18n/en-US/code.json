@@ -1,10 +1,10 @@
 {
   "theme.ErrorPageContent.title": {
-    "message": "页面已崩溃。",
+    "message": "The page has crashed.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "回到顶部",
+    "message": "Back to top",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
