@@ -12,8 +12,9 @@ const config: Config = {
     url: 'https://announcement.bfban.com',
     baseUrl: '/',
 
-    organizationName: 'facebook', // Usually your GitHub org/user name.
-    projectName: 'bfban-website-announcement', // Usually your repo name.
+    organizationName: 'bfban',
+    projectName: 'bfban-website-announcement',
+    trailingSlash: false,
 
     onBrokenLinks: 'ignore',
     onBrokenMarkdownLinks: 'ignore',
