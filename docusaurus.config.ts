@@ -3,7 +3,11 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type {Options as BlogPluginOptions} from "@docusaurus/plugin-content-blog";
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+const badges = [
+    'https://github.com/BFBAN/bfban-website-announcement/actions/workflows/deploy.yml/badge.svg?branch=main',
+    'https://img.shields.io/github/contributors/bfban/bfban-website-announcement'
+]
 
 const config: Config = {
     title: 'BFBAN',
@@ -145,20 +149,29 @@ const config: Config = {
                         },
                         {
                             prependBaseUrlToHref: '',
-                            html: `<p align='left'>©Bfban-Announcement <span class="opacity-50">2024-${new Date().getFullYear()}</span></p>`
+                            html: `<p align='left'>©Bfban-Announcement <br/><span class="opacity-50">2022-${new Date().getFullYear()}</span></p>`
                         }
                     ]
                 },
                 {
                     title: "community",
                     items: [
+
                         {
-                            label: "link",
-                            href: "https://bfban.com/link"
+                            label: "Gametool discord",
+                            href: "https://discord.gametools.network/"
                         },
                         {
-                            label: "about",
-                            href: "https://bfban.com/about"
+                            label: "BFBAN bfvrobot kook",
+                            href: "https://kook.top/6Q0FHY"
+                        },
+                        {
+                            label: "github (website)",
+                            href: "https://github.com/BFBAN/bfban-website"
+                        },
+                        {
+                            label: "github (announcement)",
+                            href: "https://github.com/BFBAN/bfban-website-announcement"
                         },
                     ]
                 },
@@ -169,14 +182,49 @@ const config: Config = {
                             label: "contactUs",
                             href: "services@bfban.com"
                         },
+                        {
+                            label: "QQ Group",
+                            href: "https://jq.qq.com/?_wv=1027&k=FY8TCpCV"
+                        }
                     ]
                 },
-                {},
+                {
+                    title: "other",
+                    items: [
+                        {
+                            label: "about",
+                            href: "https://bfban.com/about"
+                        },
+                        {
+                            label: "link",
+                            href: "https://bfban.com/link"
+                        },
+                        {
+                            label: "contactUs",
+                            href: "services@bfban.com"
+                        },
+                    ]
+                },
                 {
                     items: [
                         {
-                            html: "<iframe src=\"https://status.bfban.com/badge\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" width='100%'></iframe>"
+                            html: "<iframe src=\"https://status.bfban.com/badge\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" width='100%' height='30px'></iframe>"
                         },
+                        {
+                            html: '<hr class="m-0 p-0" />'
+                        },
+                        ...badges.map((i) => {
+                            return {
+                                html: `<img src="${i}" />`
+                            };
+                        }),
+                        {
+                            html: '<hr class="m-0 mt-1 mb-1" />'
+                        },
+                        {
+                            html: '<img src="https://bfban.com/images/links/cloudflare.png">'
+                        }
+
                     ]
                 }
             ]
