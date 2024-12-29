@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "Guidelines",
+    "message": "准则",
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "List of Guidelines",
+    "message": "准则列表",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "date",
+    "message": "日期",
     "description": "The label for the left sidebar"
   }
 }

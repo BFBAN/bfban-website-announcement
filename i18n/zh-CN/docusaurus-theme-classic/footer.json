@@ -22,7 +22,5 @@
   "link.item.label.contactUs": {
     "message": "联系我们",
     "description": "The label of footer link with label=友链 linking to https://bfban.com"
-  },
-
-
+  }
 }

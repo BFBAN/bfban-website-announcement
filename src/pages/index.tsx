@@ -2,18 +2,20 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Translate from "@docusaurus/Translate";
 import React from "react";
-
+import FWidget from "@site/src/components/_FWidget";
 
 export default function Home(): React.ReactElement {
     return (
         <Layout>
             <main className="mt-5">
                 <div className="mt-5 container">
-                    <div className="px-4 py-5 my-5 text-center rounded-3">
+                    <div className="px-4 py-5 my-5 text-center rounded-3" style={{position: 'relative'}}>
+                        <FWidget></FWidget>
+
                         <h1 className="display-2 fw-bold text-body-emphasis">
-                            <Translate id="home.title">准则</Translate>
+                            <Translate id="home.title"></Translate>
                         </h1>
-                        <div className="col-lg-12 mx-auto">
+                        <div className="col-lg-6 mx-auto">
                             <p className="lead mb-4">
                                 "<Translate id="home.description"></Translate>"
                             </p>
@@ -86,7 +88,6 @@ export default function Home(): React.ReactElement {
                                 </p>
                                 <p>
                                     <Translate id="conduct.description"></Translate>
-                                    <br/><br/>
                                 </p>
                                 <Link href="/precepts/tags/conduct" className="icon-link">
                                     <Translate id="home.refer"></Translate>
