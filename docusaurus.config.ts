@@ -25,12 +25,10 @@ const config: Config = {
         localeConfigs: {
             en: {
                 label: 'English',
-                calendar: 'gregory',
                 path: 'en-US',
             },
             zh: {
                 label: '中文',
-                calendar: 'persian',
                 path: 'zh-CN',
             },
         },
