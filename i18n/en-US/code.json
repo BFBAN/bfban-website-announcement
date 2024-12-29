@@ -280,10 +280,10 @@
   },
   "theme.blog.author.noPosts": {
     "message": "This author has not written any posts yet.",
-    "description": "The text for authors with 0 blog post"
+    "description": "The text for authors with 0 blog posts"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "未列出页",
+    "message": "Unlisted Pages",
     "description": "The unlisted content banner title"
   },
   "theme.contentVisibility.unlistedBanner.message": {
