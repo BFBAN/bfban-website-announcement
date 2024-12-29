@@ -123,11 +123,11 @@
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "选择版本",
+    "message": "Select version",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.NotFound.title": {
-    "message": "找不到页面",
+    "message": "Page Not Found",
     "description": "The title of the 404 page"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
