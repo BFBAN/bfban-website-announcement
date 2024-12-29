@@ -22,8 +22,6 @@ jobs:
         run: npm install --frozen-lockfile
       - name: 构建网站
         run: npm run build
-      - name: 构建CMS
-        run: npm run tinacms-build
       - name: 上传构建制品
         uses: actions/upload-pages-artifact@v3
         with:
