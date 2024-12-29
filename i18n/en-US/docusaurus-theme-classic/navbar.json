@@ -13,10 +13,10 @@
   },
   "item.label.precepts": {
     "message": "Guidelines",
-    "description": "Navbar item with label 准则"
+    "description": "Navbar item with label precepts"
   },
   "item.label.blog": {
-    "message": "Announcement",
+    "message": "announcement",
     "description": "Navbar item with label 博客"
   }
 }
