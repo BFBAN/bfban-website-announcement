@@ -64,7 +64,7 @@
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "文件选项卡",
+    "message": "File tab",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
