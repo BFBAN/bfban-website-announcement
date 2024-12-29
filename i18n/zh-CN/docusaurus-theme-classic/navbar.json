@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "BFBAN",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.mainWebsite": {
+    "message": "主站",
+    "description": "Navbar item with label 主站"
+  },
+  "item.label.precepts": {
+    "message": "准则",
+    "description": "Navbar item with label 准则"
+  },
+  "item.label.blog": {
+    "message": "博客",
+    "description": "Navbar item with label 博客"
+  }
+}

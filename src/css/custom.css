@@ -1,0 +1,66 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+    --ifm-color-primary: #d2c513;
+    --ifm-color-primary-dark: #e9db11;
+    --ifm-color-primary-darker: #dccf10;
+    --ifm-color-primary-darkest: #b5aa0d;
+    --ifm-color-primary-light: #f1e541;
+    --ifm-color-primary-lighter: #f2e74e;
+    --ifm-color-primary-lightest: #f5ec75;
+    --docusaurus-highlighted-code-line-bg: #f8f9fa;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+    --ifm-color-primary: #efe227;
+    --ifm-color-primary-dark: #e9db11;
+    --ifm-color-primary-darker: #dccf10;
+    --ifm-color-primary-darkest: #b5aa0d;
+    --ifm-color-primary-light: #f1e541;
+    --ifm-color-primary-lighter: #f2e74e;
+    --ifm-color-primary-lightest: #f5ec75;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background: #f8f9fa;
+}
+
+[data-theme='dark'] body {
+    background: transparent;
+}
+
+.navbar {
+    backdrop-filter: blur(15px);
+    padding: 10px 15px !important;
+    box-shadow: none !important;
+    background-color: rgba(248, 249, 250, 0.88);
+    background-image: linear-gradient(rgba(0, 0, 0, .2), transparent);
+}
+
+.navbar .navbar__link, .navbar .navbar__title {
+    font-weight: 700;
+    font-size: 14px;
+    padding: .7rem auto;
+    text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
+}
+
+[data-theme='dark'] .navbar .navbar__link, .navbar .navbar__title {
+    text-shadow: none !important;
+}
+
+[data-theme='dark'] .navbar {
+    background-color: transparent;
+    background-image: linear-gradient(rgba(70, 16, 141, 0.2), transparent);
+}
+
+.navbar__inner {
+    /*max-width: var(--ifm-container-width);*/
+    /*margin: 0 auto;*/
+}
