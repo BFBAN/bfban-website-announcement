@@ -103,7 +103,7 @@
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.headingLinkTitle": {
-    "message": "{heading}的直接链接",
+    "message": "Direct link to {heading}",
     "description": "Title for link to heading"
   },
   "theme.common.editThisPage": {
