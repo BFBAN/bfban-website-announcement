@@ -8,7 +8,7 @@
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "历史博文",
+    "message": "Historical blog posts",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
