@@ -287,7 +287,7 @@
     "description": "The unlisted content banner title"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "此页面未列出。搜索引擎不会对其索引，只有拥有直接链接的用户才能访问。",
+    "message": "This page is unlisted. It is not indexed by search engines and is only accessible to users with a direct link.",
     "description": "The unlisted content banner message"
   },
   "theme.contentVisibility.draftBanner.title": {
