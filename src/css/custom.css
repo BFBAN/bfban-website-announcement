@@ -80,3 +80,7 @@ body {
     /*max-width: var(--ifm-container-width);*/
     /*margin: 0 auto;*/
 }
+
+.title_f1Hy {
+    font-size: 2rem !important;
+}

@@ -1,20 +1,19 @@
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Translate from "@docusaurus/Translate";
+import React from "react";
 
-export default function Home(): JSX.Element {
-    const {siteConfig} = useDocusaurusContext();
+
+export default function Home(): React.ReactElement {
     return (
         <Layout>
             <main className="mt-5">
                 <div className="mt-5 container">
                     <div className="px-4 py-5 my-5 text-center rounded-3">
-                        <h1 className="display-5 fw-bold text-body-emphasis">
+                        <h1 className="display-2 fw-bold text-body-emphasis">
                             <Translate id="home.title">准则</Translate>
                         </h1>
-                        <div className="col-lg-6 mx-auto">
+                        <div className="col-lg-12 mx-auto">
                             <p className="lead mb-4">
                                 "<Translate id="home.description"></Translate>"
                             </p>
@@ -25,18 +24,18 @@ export default function Home(): JSX.Element {
                 <div className="container">
                     <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-2 py-5">
                         <div className="col">
-                            <div className="border rounded-4 feature bg-gradient p-3">
+                            <div className="border rounded-4 feature bg-gradient p-3 card">
                                 <div
-                                    className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                                    className="feature-icon d-inline-flex align-items-center justify-content-start fs-1 mb-3">
                                     <i className="bi bi-book"></i>
                                 </div>
                                 <h3 className="fs-2 text-body-emphasis">
                                     <Translate id="personnel.title"></Translate>
                                 </h3>
                                 <p>
-                                    <div className="badge rounded-pill text-bg-dark">
+                                    <span className="badge rounded-pill text-bg-dark">
                                         <Translate id="home.firstEdition"></Translate>
-                                    </div>
+                                    </span>
                                 </p>
                                 <p>
                                     <Translate id="personnel.description"></Translate>
@@ -47,9 +46,9 @@ export default function Home(): JSX.Element {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="border rounded-4 feature bg-gradient p-3">
+                            <div className="border rounded-4 feature bg-gradient p-3 card">
                                 <div
-                                    className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                                    className="feature-icon d-inline-flex align-items-center justify-content-start fs-1 mb-3">
                                     <i className="bi bi-book"></i>
                                 </div>
                                 <h3 className="fs-2 text-body-emphasis">
@@ -59,7 +58,6 @@ export default function Home(): JSX.Element {
                                     <span className="badge rounded-pill text-bg-danger">
                                         <Translate id="home.updata"></Translate>
                                     </span>
-                                    <tspan></tspan>
                                     <span className="badge rounded-pill text-bg-dark">
                                         v4
                                     </span>
@@ -73,18 +71,18 @@ export default function Home(): JSX.Element {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="border rounded-4 feature bg-gradient p-3">
+                            <div className="border rounded-4 feature bg-gradient p-3 card">
                                 <div
-                                    className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                                    className="feature-icon d-inline-flex align-items-center justify-content-start fs-1 mb-3">
                                     <i className="bi bi-book"></i>
                                 </div>
                                 <h3 className="fs-2 text-body-emphasis">
                                     <Translate id="conduct.title"></Translate>
                                 </h3>
                                 <p>
-                                    <div className="badge rounded-pill text-bg-dark">
+                                    <span className="badge rounded-pill text-bg-dark">
                                         <Translate id="home.firstEdition"></Translate>
-                                    </div>
+                                    </span>
                                 </p>
                                 <p>
                                     <Translate id="conduct.description"></Translate>

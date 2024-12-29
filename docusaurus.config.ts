@@ -20,7 +20,7 @@ const config: Config = {
     onBrokenMarkdownLinks: 'ignore',
 
     i18n: {
-        defaultLocale: 'zh',
+        defaultLocale: 'en',
         locales: ['zh', 'en'],
         localeConfigs: {
             en: {
@@ -89,10 +89,10 @@ const config: Config = {
                     type: ['rss', 'atom'],
                     xslt: true,
                 },
-                blogListComponent: '@theme/BlogListPage',
-                blogPostComponent: '@theme/BlogPostPage',
-                blogTagsListComponent: '@theme/BlogTagsListPage',
-                blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+                // blogListComponent: '@theme/BlogListPage',
+                // blogPostComponent: '@theme/BlogPostPage',
+                // blogTagsListComponent: '@theme/BlogTagsListPage',
+                // blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
                 onInlineTags: 'ignore',
                 onInlineAuthors: 'ignore',
                 onUntruncatedBlogPosts: 'ignore',
@@ -107,7 +107,7 @@ const config: Config = {
                 onInlineTags: 'ignore',
                 onInlineAuthors: 'ignore',
                 onUntruncatedBlogPosts: 'ignore',
-            },
+            } satisfies BlogPluginOptions,
         ]
     ],
 
@@ -132,6 +132,54 @@ const config: Config = {
                     position: 'right',
                 },
             ],
+        },
+        footer: {
+            style: 'light',
+            links: [
+                {
+                    title: " ",
+                    items: [
+                        {
+                            prependBaseUrlToHref: '',
+                            html: "<p align='left'><img height='40px' src='https://bfban.com/assets/img/friendly-web.16e0cc25.png' /></p>"
+                        },
+                        {
+                            prependBaseUrlToHref: '',
+                            html: `<p align='left'>©Bfban-Announcement <span class="opacity-50">2024-${new Date().getFullYear()}</span></p>`
+                        }
+                    ]
+                },
+                {
+                    title: "community",
+                    items: [
+                        {
+                            label: "link",
+                            href: "https://bfban.com/link"
+                        },
+                        {
+                            label: "about",
+                            href: "https://bfban.com/about"
+                        },
+                    ]
+                },
+                {
+                    title: "connection",
+                    items: [
+                        {
+                            label: "contactUs",
+                            href: "services@bfban.com"
+                        },
+                    ]
+                },
+                {},
+                {
+                    items: [
+                        {
+                            html: "<iframe src=\"https://status.bfban.com/badge\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" width='100%'></iframe>"
+                        },
+                    ]
+                }
+            ]
         },
         prism: {
             theme: prismThemes.github,
