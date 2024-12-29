@@ -11,9 +11,13 @@ export default function Home(): JSX.Element {
             <main className="mt-5">
                 <div className="mt-5 container">
                     <div className="px-4 py-5 my-5 text-center rounded-3">
-                        <h1 className="display-5 fw-bold text-body-emphasis">准则</h1>
+                        <h1 className="display-5 fw-bold text-body-emphasis">
+                            <Translate id="home.title">准则</Translate>
+                        </h1>
                         <div className="col-lg-6 mx-auto">
-                            <p className="lead mb-4">这将是带领BFBAN不动摇基石，所有参与社区成员坚定维护最初目标</p>
+                            <p className="lead mb-4">
+                                "<Translate id="home.description"></Translate>"
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -26,11 +30,20 @@ export default function Home(): JSX.Element {
                                     className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                                     <i className="bi bi-book"></i>
                                 </div>
-                                <h3 className="fs-2 text-body-emphasis">人事规则</h3>
-                                <p>BFBAN团队的人事招新规则，成员的结构以及不同成员的权利和义务和要求说明 .</p>
-                                <a href="#" className="icon-link">
+                                <h3 className="fs-2 text-body-emphasis">
+                                    <Translate id="personnel.title"></Translate>
+                                </h3>
+                                <p>
+                                    <div className="badge rounded-pill text-bg-dark">
+                                        <Translate id="home.firstEdition"></Translate>
+                                    </div>
+                                </p>
+                                <p>
+                                    <Translate id="personnel.description"></Translate>
+                                </p>
+                                <Link href="/precepts/tags/personnel" className="icon-link">
                                     <Translate id="home.refer"></Translate>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col">
@@ -39,11 +52,24 @@ export default function Home(): JSX.Element {
                                     className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                                     <i className="bi bi-book"></i>
                                 </div>
-                                <h3 className="fs-2 text-body-emphasis">反作弊规则</h3>
-                                <p>BFBAN团队对不同案件的处理标准，按照最新的标准来对案件进行处理 .</p>
-                                <a href="/precepts/tags/precepts" className="icon-link">
+                                <h3 className="fs-2 text-body-emphasis">
+                                    <Translate id="precepts.title"></Translate>
+                                </h3>
+                                <p>
+                                    <span className="badge rounded-pill text-bg-danger">
+                                        <Translate id="home.updata"></Translate>
+                                    </span>
+                                    <tspan></tspan>
+                                    <span className="badge rounded-pill text-bg-dark">
+                                        v4
+                                    </span>
+                                </p>
+                                <p>
+                                    <Translate id="precepts.description"></Translate>
+                                </p>
+                                <Link href="/precepts/tags/precepts" className="icon-link">
                                     <Translate id="home.refer"></Translate>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col">
@@ -52,11 +78,21 @@ export default function Home(): JSX.Element {
                                     className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                                     <i className="bi bi-book"></i>
                                 </div>
-                                <h3 className="fs-2 text-body-emphasis">行为规则</h3>
-                                <p>BFBAN团队的成员在日常工作中的行为规范 .</p>
-                                <a href="#" className="icon-link">
+                                <h3 className="fs-2 text-body-emphasis">
+                                    <Translate id="conduct.title"></Translate>
+                                </h3>
+                                <p>
+                                    <div className="badge rounded-pill text-bg-dark">
+                                        <Translate id="home.firstEdition"></Translate>
+                                    </div>
+                                </p>
+                                <p>
+                                    <Translate id="conduct.description"></Translate>
+                                    <br/><br/>
+                                </p>
+                                <Link href="/precepts/tags/conduct" className="icon-link">
                                     <Translate id="home.refer"></Translate>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

@@ -309,5 +309,38 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "precepts.title": {
+    "message": "反作弊规则"
+  },
+  "precepts.description": {
+    "message": "BFBAN团队对不同案件的处理标准，按照最新的标准来对案件进行处理."
+  },
+  "personnel.title": {
+    "message": "人事规则"
+  },
+  "personnel.description": {
+    "message": "BFBAN团队的人事招新规则，成员的结构以及不同成员的权利和义务和要求说明."
+  },
+  "home.firstEdition": {
+    "message": "初版"
+  },
+  "home.refer": {
+    "message": "阅读"
+  },
+  "home.updata": {
+    "message": "近期更新"
+  },
+  "home.title": {
+    "message": "准则"
+  },
+  "home.description": {
+    "message": "这将是带领BFBAN不动摇基石，所有参与社区成员坚定维护最初目标"
+  },
+  "conduct.title": {
+    "message": "行为规则"
+  },
+  "conduct.description": {
+    "message": "BFBAN团队成员在日常工作中的行为规范 ."
   }
 }

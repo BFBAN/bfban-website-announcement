@@ -9,14 +9,14 @@
   },
   "item.label.mainWebsite": {
     "message": "主站",
-    "description": "Navbar item with label 主站"
+    "description": "Navbar item with label mainWebsite"
   },
   "item.label.precepts": {
     "message": "准则",
-    "description": "Navbar item with label 准则"
+    "description": "Navbar item with label precepts"
   },
   "item.label.blog": {
     "message": "博客",
-    "description": "Navbar item with label 博客"
+    "description": "Navbar item with label blog"
   }
 }
