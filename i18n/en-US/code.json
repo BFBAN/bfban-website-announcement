@@ -231,7 +231,7 @@
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.NotFound.p1": {
-    "message": "我们找不到您要找的页面。",
+    "message": "We couldn't find the page you were looking for.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
