@@ -107,7 +107,7 @@
     "description": "Title for link to heading"
   },
   "theme.common.editThisPage": {
-    "message": "编辑此页",
+    "message": "Edit this page",
     "description": "The link label to edit the current page"
   },
   "theme.lastUpdated.atDate": {
