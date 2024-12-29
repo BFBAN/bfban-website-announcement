@@ -260,10 +260,10 @@
   },
   "theme.blog.post.plurals": {
     "message": "{count} blog posts",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/ cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} 含有标签「{tagName}」",
+    "message": "{nPosts} contains the tag \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.blog.author.pageTitle": {
