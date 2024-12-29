@@ -235,7 +235,7 @@
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "请联系原始链接来源网站的所有者，并告知他们链接已损坏。",
+    "message": "Please contact the owner of the website from which the original link came and inform them that the link is broken.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
