@@ -68,6 +68,26 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "i18n",
+        label: "I18n",
+        path: "i18n",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
+          },
+        ],
+      },
     ],
   },
 });

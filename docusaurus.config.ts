@@ -8,7 +8,7 @@ import type {Options as BlogPluginOptions} from "@docusaurus/plugin-content-blog
 const config: Config = {
     title: 'BFBAN',
     tagline: '',
-    favicon: 'img/logo.png',
+    favicon: 'img/favicon.ico',
     url: 'https://announcement.bfban.com',
     baseUrl: '/',
 
@@ -38,7 +38,7 @@ const config: Config = {
 
     stylesheets: [
         {
-            href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
+            href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
             rel: "stylesheet",
             crossOrigin: "anonymous"
         }, {
@@ -52,7 +52,7 @@ const config: Config = {
             crossOrigin: "anonymous"
         },
         {
-            src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"',
+            src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js',
             crossOrigin: "anonymous"
         },
         {
