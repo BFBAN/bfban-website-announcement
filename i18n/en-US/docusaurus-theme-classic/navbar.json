@@ -8,11 +8,11 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.mainWebsite": {
-    "message": "BFBAN website",
-    "description": "Navbar item with label 主站"
+    "message": "Main Station",
+    "description": "Navbar item with label mainWebsite"
   },
   "item.label.precepts": {
-    "message": "Precepts",
+    "message": "Guidelines",
     "description": "Navbar item with label 准则"
   },
   "item.label.blog": {
