@@ -211,7 +211,7 @@
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.blog.post.readMore": {
-    "message": "阅读更多",
+    "message": "Read more",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
