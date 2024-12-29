@@ -2,8 +2,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import Translate from "@docusaurus/Translate";
 
 export default function Home(): JSX.Element {
     const {siteConfig} = useDocusaurusContext();
@@ -30,9 +29,7 @@ export default function Home(): JSX.Element {
                                 <h3 className="fs-2 text-body-emphasis">人事规则</h3>
                                 <p>BFBAN团队的人事招新规则，成员的结构以及不同成员的权利和义务和要求说明 .</p>
                                 <a href="#" className="icon-link">
-                                    查阅
-                                    <svg className="bi">
-                                    </svg>
+                                    <Translate id="home.refer"></Translate>
                                 </a>
                             </div>
                         </div>
@@ -45,9 +42,7 @@ export default function Home(): JSX.Element {
                                 <h3 className="fs-2 text-body-emphasis">反作弊规则</h3>
                                 <p>BFBAN团队对不同案件的处理标准，按照最新的标准来对案件进行处理 .</p>
                                 <a href="/precepts/tags/precepts" className="icon-link">
-                                    查阅
-                                    <svg className="bi">
-                                    </svg>
+                                    <Translate id="home.refer"></Translate>
                                 </a>
                             </div>
                         </div>
@@ -60,9 +55,7 @@ export default function Home(): JSX.Element {
                                 <h3 className="fs-2 text-body-emphasis">行为规则</h3>
                                 <p>BFBAN团队的成员在日常工作中的行为规范 .</p>
                                 <a href="#" className="icon-link">
-                                    查阅
-                                    <svg className="bi">
-                                    </svg>
+                                    <Translate id="home.refer"></Translate>
                                 </a>
                             </div>
                         </div>
