@@ -307,7 +307,7 @@
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "标签",
+    "message": "Label",
     "description": "The title of the tag list page"
   },
   "precepts.title": {
