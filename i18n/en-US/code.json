@@ -342,5 +342,17 @@
   },
   "conduct.description": {
     "message": "Code of Conduct for BFBAN team members in daily work."
+  },
+  "privacy-policy.title": {
+    "message": "Privacy Policy"
+  },
+  "privacy-policy.description": {
+    "message": "Protecting your privacy and personal data is very important to us."
+  },
+  "exterior-design.title": {
+    "message": "Design Specifications"
+  },
+  "exterior-design.description": {
+    "message": "Publicize our use of icons and guide the correct use of LOGO and external link components"
   }
 }
