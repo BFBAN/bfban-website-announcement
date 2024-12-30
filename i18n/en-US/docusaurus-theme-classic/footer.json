@@ -1,22 +1,47 @@
 {
   "link.item.label.connection": {
-    "message": "Connection",
-    "description": "The label of footer link with label=隐私 linking to https://bfban.com"
+    "message": "connect"
   },
   "link.item.label.link": {
-    "message": "Friend link",
-    "description": "The label of footer link with label=友链 linking to https://bfban.com"
+    "message": "Friends Links"
   },
   "link.item.label.community": {
-    "message": "Community",
-    "description": "The label of footer link with label=友链 linking to https://bfban.com"
+    "message": "Community"
   },
   "link.item.label.about": {
-    "message": "About",
-    "description": "The label of footer link with label=友链 linking to https://bfban.com"
+    "message": "about"
   },
   "link.item.label.contactUs": {
-    "message": "Email Contact Us",
-    "description": "The label of footer link with label=友链 linking to https://bfban.com"
+    "message": "Contact Us"
+  },
+  "link.item.label.other": {
+    "message": "other"
+  },
+  "link.title. ": {
+    "message": " "
+  },
+  "link.title.community": {
+    "message": "Community"
+  },
+  "link.title.connection": {
+    "message": "connect"
+  },
+  "link.title.other": {
+    "message": "other"
+  },
+  "link.item.label.Gametool discord": {
+    "message": "Gametool discord"
+  },
+  "link.item.label.BFBAN bfvrobot kook": {
+    "message": "BFBAN bfvrobot kook"
+  },
+  "link.item.label.github (website)": {
+    "message": "github (website)"
+  },
+  "link.item.label.github (announcement)": {
+    "message": "github (announcement)"
+  },
+  "link.item.label.QQ Group": {
+    "message": "QQ Group"
   }
 }
