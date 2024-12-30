@@ -23,6 +23,7 @@ export default function Home(): React.ReactElement {
                     </div>
                 </div>
 
+                {/*Main Row S*/}
                 <div className="container">
                     <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-2 py-5">
                         <div className="col">
@@ -92,6 +93,32 @@ export default function Home(): React.ReactElement {
                                 <Link href="/precepts/tags/conduct" className="icon-link">
                                     <Translate id="home.refer"></Translate>
                                 </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/*Main Row E*/}
+
+                <div className="container mb-5">
+                    <div className="row row-cols-4 align-items-stretch">
+                        <div className="d-flex w-2">
+                            <div className="border rounded-4 feature bg-gradient p-3 card">
+                                <h3 className="fs-2 text-body-emphasis">
+                                    <Translate id="privacy-policy.title">隐私政策</Translate>
+                                </h3>
+                                <p>
+                                    <Translate id="privacy-policy.description">保护您的隐私和个人数据对我们非常重要，向公众展示我们对隐私内容</Translate>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="d-flex w-2">
+                            <div className="border rounded-4 feature bg-gradient p-3 card">
+                                <h3 className="fs-2 text-body-emphasis">
+                                    <Translate id="exterior-design.title">设计规范</Translate>
+                                </h3>
+                                <p>
+                                    <Translate id="exterior-design.description">公示我们对于图标用途，指导正确使用LOGO以及外链部件</Translate>
+                                </p>
                             </div>
                         </div>
                     </div>

@@ -16,5 +16,32 @@
   },
   "link.item.label.other": {
     "message": "其他"
+  },
+  "link.title. ": {
+    "message": " "
+  },
+  "link.title.community": {
+    "message": "社区"
+  },
+  "link.title.connection": {
+    "message": "联系"
+  },
+  "link.title.other": {
+    "message": "其他"
+  },
+  "link.item.label.Gametool discord": {
+    "message": "Gametool discord"
+  },
+  "link.item.label.BFBAN bfvrobot kook": {
+    "message": "BFBAN bfvrobot kook"
+  },
+  "link.item.label.github (website)": {
+    "message": "github (website)"
+  },
+  "link.item.label.github (announcement)": {
+    "message": "github (announcement)"
+  },
+  "link.item.label.QQ Group": {
+    "message": "QQ 群"
   }
 }

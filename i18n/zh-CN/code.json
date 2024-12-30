@@ -342,5 +342,17 @@
   },
   "conduct.description": {
     "message": "BFBAN团队成员在日常工作中的行为规范 ."
+  },
+  "privacy-policy.title": {
+    "message": "隐私政策"
+  },
+  "privacy-policy.description": {
+    "message": "保护您的隐私和个人数据对我们非常重要，向公众展示我们对隐私内容"
+  },
+  "exterior-design.title": {
+    "message": "设计规范"
+  },
+  "exterior-design.description": {
+    "message": "公示我们对于图标用途，指导正确使用LOGO以及外链部件"
   }
 }

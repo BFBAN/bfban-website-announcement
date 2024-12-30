@@ -24,7 +24,7 @@ const config: Config = {
     onBrokenMarkdownLinks: 'ignore',
 
     i18n: {
-        defaultLocale: 'en',
+        defaultLocale: 'zh',
         locales: ['zh', 'en'],
         localeConfigs: {
             en: {
@@ -70,7 +70,9 @@ const config: Config = {
                 docs: false,
                 blog: false,
                 theme: {
-                    customCss: './src/css/custom.css',
+                    customCss: [
+                        './src/css/custom.css'
+                    ],
                 },
             },
         ],
