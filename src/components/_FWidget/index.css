@@ -15,12 +15,13 @@
     position: absolute;
     top: 10px;
     animation: styles_herosection_animation 25s infinite;
-    opacity: .08;
+    opacity: 1;
 }
 
 [data-theme='dark'] .styles_herosection .styles_bg {
     background: linear-gradient(302.61deg, rgb(255, 239, 0) -.71%, #8d00ff 89.57%);
     filter: blur(70px);
+    opacity: .1 !important;
 }
 
 @keyframes styles_herosection_animation {

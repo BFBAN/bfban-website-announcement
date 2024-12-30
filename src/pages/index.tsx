@@ -1,8 +1,10 @@
+import React from "react";
+
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Translate from "@docusaurus/Translate";
-import React from "react";
 import FWidget from "@site/src/components/_FWidget";
+import GithubContributorsWidget from "@site/src/components/GithubContributorsWidget";
 
 export default function Home(): React.ReactElement {
     return (
@@ -66,6 +68,7 @@ export default function Home(): React.ReactElement {
                                     <p>
                                         <span className="badge rounded-pill text-bg-danger"><Translate
                                             id="home.updata"></Translate></span>
+                                        <span>&thinsp;</span>
                                         <span className="badge rounded-pill text-bg-dark">v4</span>
                                     </p>
                                     <p className="card-text">
@@ -122,7 +125,7 @@ export default function Home(): React.ReactElement {
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
-                                        <Link href="/precepts/tags/privacy-policy" target="_blank">
+                                        <Link href="/precepts/tags/privacy-policy" target="_self">
                                             <h3 className="fs-2 text-body-emphasis">
                                                 <Translate id="privacy-policy.title"></Translate>
                                             </h3>
@@ -145,7 +148,7 @@ export default function Home(): React.ReactElement {
                                 </div>
                                 <div className="col-8">
                                     <div className="card-body">
-                                        <Link href="/precepts/tags/exterior-design" target="_blank">
+                                        <Link href="/precepts/tags/exterior-design" target="_self">
                                             <h3 className="fs-2 text-body-emphasis">
                                                 <Translate id="exterior-design.title"></Translate>
                                             </h3>
@@ -161,6 +164,8 @@ export default function Home(): React.ReactElement {
                         </div>
                     </div>
                 </div>
+
+                <GithubContributorsWidget/>
             </main>
         </Layout>
     );

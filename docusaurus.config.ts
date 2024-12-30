@@ -3,7 +3,6 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type {Options as BlogPluginOptions} from "@docusaurus/plugin-content-blog";
 
-
 const badges = [
     'https://github.com/BFBAN/bfban-website-announcement/actions/workflows/deploy.yml/badge.svg?branch=main',
     'https://img.shields.io/github/contributors/bfban/bfban-website-announcement'
@@ -24,7 +23,7 @@ const config: Config = {
     onBrokenMarkdownLinks: 'ignore',
 
     i18n: {
-        defaultLocale: 'zh',
+        defaultLocale: 'en',
         locales: ['zh', 'en'],
         localeConfigs: {
             en: {
@@ -148,11 +147,11 @@ const config: Config = {
                     items: [
                         {
                             prependBaseUrlToHref: '',
-                            html: "<p align='left'><img height='40px' src='https://bfban.com/assets/img/friendly-web.16e0cc25.png' /></p>"
+                            html: "<p align='left'><a href='https://bfban.com'><img height='40px' src='https://bfban.com/assets/img/friendly-web.16e0cc25.png' /></a></p>"
                         },
                         {
                             prependBaseUrlToHref: '',
-                            html: `<p align='left'>©Bfban-Announcement <br/><span class="opacity-50">2022-${new Date().getFullYear()}</span></p>`
+                            html: `<p align='left'><span class="fw-bold">©Bfban Website Announcement</span> <br/><span class="opacity-50 fw-light">2022-${new Date().getFullYear()}</span></p>`
                         }
                     ]
                 },
@@ -211,10 +210,7 @@ const config: Config = {
                 {
                     items: [
                         {
-                            html: "<iframe src=\"https://status.bfban.com/badge\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" width='100%' height='30px'></iframe>"
-                        },
-                        {
-                            html: '<hr class="m-0 p-0" />'
+                            html: "<p><iframe src=\"https://status.bfban.com/badge\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" width='100%' height='30px'></iframe></p>"
                         },
                         ...badges.map((i) => {
                             return {
@@ -222,10 +218,10 @@ const config: Config = {
                             };
                         }),
                         {
-                            html: '<hr class="m-0 mt-1 mb-1" />'
+                            html: '<hr class="m-0 mt-2 mb-2" />'
                         },
                         {
-                            html: '<img src="https://bfban.com/images/links/cloudflare.png">'
+                            html: '<img height="40" src="https://bfban.com/images/links/cloudflare.svg">'
                         }
 
                     ]

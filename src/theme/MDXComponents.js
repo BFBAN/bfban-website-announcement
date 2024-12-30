@@ -1,8 +1,8 @@
-import React from 'react';
 import MDXComponents from '@theme-original/MDXComponents';
 import Highlight from '@site/src/components/Highlight';
 import Importance from '@site/src/components/Importance';
 import Color from "@site/src/components/Color";
+import GithubContributorsWidget from "@site/src/components/GithubContributorsWidget";
 
 export default {
     ...MDXComponents,
@@ -12,4 +12,5 @@ export default {
     Imp: Importance,
     Color,
     C: Color,
+    GithubContributorsWidget,
 };
