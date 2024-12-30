@@ -71,7 +71,8 @@ const config: Config = {
                 blog: false,
                 theme: {
                     customCss: [
-                        './src/css/custom.css'
+                        './src/css/index.css',
+                        './src/css/theme.css'
                     ],
                 },
             },
