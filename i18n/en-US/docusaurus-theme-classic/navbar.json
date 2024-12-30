@@ -1,22 +1,17 @@
 {
   "title": {
-    "message": "BFBAN",
-    "description": "The title in the navbar"
+    "message": "BFBAN"
   },
   "logo.alt": {
-    "message": "logo",
-    "description": "The alt text of navbar logo"
+    "message": "logo"
   },
   "item.label.mainWebsite": {
-    "message": "Main Station",
-    "description": "Navbar item with label mainWebsite"
+    "message": "Main Station"
   },
   "item.label.precepts": {
-    "message": "Guidelines",
-    "description": "Navbar item with label precepts"
+    "message": "Guidelines"
   },
   "item.label.blog": {
-    "message": "announcement",
-    "description": "Navbar item with label blog"
+    "message": "announcement"
   }
 }
