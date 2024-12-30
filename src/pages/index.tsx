@@ -116,48 +116,77 @@ export default function Home(): React.ReactElement {
 
                 <div className="container mb-5">
                     <div className="row row-cols-3 align-items-stretch">
-                        <div className="d-flex card m-3">
-                            <div className="row g-0 h-100">
-                                <div
-                                    className="col-3 align-content-center justify-items-center text-center"
-                                    style={{backgroundColor: 'var(--ifm-color-primary)'}}>
-                                    <i className="bi bi-eyeglasses fs-1 text-white"></i>
-                                </div>
-                                <div className="col-md-8">
-                                    <div className="card-body">
-                                        <Link href="/precepts/tags/privacy-policy" target="_self">
-                                            <h3 className="fs-2 text-body-emphasis">
-                                                <Translate id="privacy-policy.title"></Translate>
-                                            </h3>
-                                        </Link>
-                                        <p>
+                        <div className="col-12 col-sm-12 col-lg-5">
+                            <div className="d-flex card m-2">
+                                <div className="row g-0 h-100">
+                                    <div
+                                        className="col-3 align-content-center justify-items-center text-center"
+                                        style={{backgroundColor: 'var(--ifm-color-primary)'}}>
+                                        <i className="bi bi-eyeglasses fs-1 text-white"></i>
+                                    </div>
+                                    <div className="col-8">
+                                        <div className="card-body">
+                                            <Link href="/precepts/tags/privacy-policy" target="_self">
+                                                <h3 className="fs-2 text-body-emphasis">
+                                                    <Translate id="privacy-policy.title"></Translate>
+                                                </h3>
+                                            </Link>
+                                            <p>
                                             <span className="badge rounded-pill text-bg-danger"><Translate
                                                 id="home.updata"></Translate></span>
-                                        </p>
-                                        <Translate id="privacy-policy.description"></Translate>
+                                            </p>
+                                            <Translate id="privacy-policy.description"></Translate>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex card m-3">
-                            <div className="row g-0 h-100">
-                            <div
-                                    className="col-3 align-content-center justify-items-center text-center"
-                                    style={{backgroundColor: 'var(--ifm-color-primary)'}}>
-                                    <i className="bi bi-palette d-block fs-1 text-white"></i>
-                                </div>
-                                <div className="col-8">
-                                    <div className="card-body">
-                                        <Link href="/precepts/tags/exterior-design" target="_self">
-                                            <h3 className="fs-2 text-body-emphasis">
-                                                <Translate id="exterior-design.title"></Translate>
-                                            </h3>
-                                        </Link>
-                                        <p>
+                        <div className="col-12 col-sm-12 col-lg-5">
+                            <div className="d-flex card m-2">
+                                <div className="row g-0 h-100">
+                                    <div
+                                        className="col-3 align-content-center justify-items-center text-center"
+                                        style={{backgroundColor: 'var(--ifm-color-primary)'}}>
+                                        <i className="bi bi-palette d-block fs-1 text-white"></i>
+                                    </div>
+                                    <div className="col-8">
+                                        <div className="card-body">
+                                            <Link href="/precepts/tags/exterior-design" target="_self">
+                                                <h3 className="fs-2 text-body-emphasis">
+                                                    <Translate id="exterior-design.title"></Translate>
+                                                </h3>
+                                            </Link>
+                                            <p>
                                             <span className="badge rounded-pill text-bg-danger"><Translate
                                                 id="home.updata"></Translate></span>
-                                        </p>
-                                        <Translate id="exterior-design.description"></Translate>
+                                            </p>
+                                            <Translate id="exterior-design.description"></Translate>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-sm-12 col-lg-5">
+                            <div className="d-flex card m-2">
+                                <div className="row g-0 h-100">
+                                    <div
+                                        className="col-3 align-content-center justify-items-center text-center"
+                                        style={{backgroundColor: 'var(--ifm-color-primary)'}}>
+                                        <i className="bi bi-palette d-block fs-1 text-white"></i>
+                                    </div>
+                                    <div className="col-8">
+                                        <div className="card-body">
+                                            <Link href="/precepts/tags/exterior-design" target="_self">
+                                                <h3 className="fs-2 text-body-emphasis">
+                                                    <Translate id="exterior-design.title"></Translate>
+                                                </h3>
+                                            </Link>
+                                            <p>
+                                            <span className="badge rounded-pill text-bg-danger"><Translate
+                                                id="home.updata"></Translate></span>
+                                            </p>
+                                            <Translate id="exterior-design.description"></Translate>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -23,7 +23,7 @@ const config: Config = {
     onBrokenMarkdownLinks: 'ignore',
 
     i18n: {
-        defaultLocale: 'en',
+        defaultLocale: 'zh',
         locales: ['zh', 'en'],
         localeConfigs: {
             en: {
@@ -130,7 +130,7 @@ const config: Config = {
                 }
             },
             items: [
-                {to: 'https://bfban.com', label: 'mainWebsite', position: 'left'},
+                {href: 'https://bfban.com', target: '_self', label: 'mainWebsite', position: 'left'},
                 {to: '/precepts', label: 'precepts', position: 'left'},
                 {to: '/blog', label: 'blog', position: 'left'},
                 {
@@ -161,7 +161,7 @@ const config: Config = {
 
                         {
                             label: "Gametool discord",
-                            href: "https://discord.gametools.network/"
+                            href: "https://discord.gametools.network"
                         },
                         {
                             label: "BFBAN bfvrobot kook",
@@ -200,11 +200,7 @@ const config: Config = {
                         {
                             label: "link",
                             href: "https://bfban.com/link"
-                        },
-                        {
-                            label: "contactUs",
-                            href: "services@bfban.com"
-                        },
+                        }
                     ]
                 },
                 {
@@ -221,7 +217,7 @@ const config: Config = {
                             html: '<hr class="m-0 mt-2 mb-2" />'
                         },
                         {
-                            html: '<img height="40" src="https://bfban.com/images/links/cloudflare.svg">'
+                            html: '<img height="40" src="https://bfban.com/images/links/cloudflare-pages.svg">'
                         }
 
                     ]

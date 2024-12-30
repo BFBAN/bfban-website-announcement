@@ -12,6 +12,10 @@ body {
     background-color: rgba(248, 249, 250, 0.88);
 }
 
+.navbar.navbar--fixed-top {
+    /*position: relative !important;*/
+}
+
 .navbar::after {
     content: "";
     position: absolute;
@@ -22,19 +26,41 @@ body {
     bottom: 0;
 }
 
+.navbar::before {
+    content: "";
+    position: absolute;
+    background: #8d00ff;
+    filter: blur(50px);
+    user-select: none;
+    pointer-events: none;
+    z-index: -1;
+    opacity: .95;
+    width: 140px;
+    height: 40px;
+    top: 0;
+    left: -30px;
+}
+
 .navbar::after, .navbar-sidebar--show .navbar-sidebar__backdrop {
     backdrop-filter: blur(15px);
     background-image: linear-gradient(rgba(0, 0, 0, .2), transparent);
 }
 
-.navbar .navbar__link, .navbar .navbar__title {
-    font-weight: 700;
-    font-size: 14px;
+.navbar .navbar__link {
     padding: .7rem auto;
-    text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
 }
 
-[data-theme='dark'] .navbar .navbar__link, .navbar .navbar__title {
+.navbar .navbar__link, .navbar .navbar__brand b {
+    font-weight: 700;
+    font-size: 14px;
+    text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0 !important;
+}
+
+.navbar .navbar__item svg {
+    margin: -3px 0 0 5px;
+}
+
+[data-theme='dark'] .navbar .navbar__link, [data-theme='dark'] .navbar .navbar__brand b {
     text-shadow: none !important;
 }
 
