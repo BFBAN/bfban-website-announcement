@@ -2,6 +2,7 @@
 slug: sophistry
 title: 2023-2024年 作弊玩家诡辩圣经
 date: 2023-10-15
+authors: [ Carbon235AALoliS , Yueye ]
 ---
 
 > 以下是由BFBAN总结2023-2024年，作弊玩家常见申述为自己诡辩内容，请欣赏

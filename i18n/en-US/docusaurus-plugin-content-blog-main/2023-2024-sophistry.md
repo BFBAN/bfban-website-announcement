@@ -2,6 +2,7 @@
 slug: sophistry
 title: 2023-2024 Cheating Player Sophistry Bible
 date: 2023-10-15
+authors: [ Carbon235AALoliS , Yueye , Fishbat627 ]
 ---
 
 > The following is a summary by BFBAN 2023-2024, cheating players common claim for their own sophists content, please enjoy
