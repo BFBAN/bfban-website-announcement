@@ -184,7 +184,7 @@ const config: Config = {
                     items: [
                         {
                             label: "contactUs",
-                            href: "services@bfban.com"
+                            href: "mailto:services@bfban.com"
                         },
                         {
                             label: "QQ Group",
@@ -216,12 +216,8 @@ const config: Config = {
                             };
                         }),
                         {
-                            html: '<hr class="m-0 mt-2 mb-2" />'
-                        },
-                        {
-                            html: '<img height="40" src="https://bfban.com/images/links/cloudflare-pages.svg">'
+                            html: '<div class="mt-2"><a href="https://pages.cloudflare.com/"><img class="border rounded-2" height="40" src="https://bfban.com/images/links/cloudflare-pages.svg"/></a></div>'
                         }
-
                     ]
                 }
             ]
