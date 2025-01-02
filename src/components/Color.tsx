@@ -10,7 +10,6 @@ export default function TextColor({children, backgroundColor, color}: {
             style={{
                 backgroundColor: backgroundColor,
                 color: color,
-                padding: '0 2px'
             }}>
       {children}
     </span>
