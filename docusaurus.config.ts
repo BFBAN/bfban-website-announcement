@@ -103,6 +103,9 @@ const config: Config = {
                 onInlineTags: 'ignore',
                 onInlineAuthors: 'ignore',
                 onUntruncatedBlogPosts: 'ignore',
+                remarkPlugins: [
+                    require('remark-gfm')
+                ]
             } satisfies BlogPluginOptions
         ],
         [

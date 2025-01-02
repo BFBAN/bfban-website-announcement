@@ -20,7 +20,16 @@ main *::marker {
     background: transparent;
 }
 
+footer {
+    user-select: none;
+}
+
+#__docusaurus > footer {
+    border-top: 1px solid var(--ifm-toc-border-color);
+}
+
 .navbar {
+    user-select: none;
     padding: 10px 15px !important;
     box-shadow: none !important;
     background-color: rgba(248, 249, 250, 0.88);
@@ -90,4 +99,31 @@ main *::marker {
 
 .title_f1Hy {
     font-size: 2rem !important;
+}
+
+.table-of-contents__left-border {
+    border: none;
+}
+
+.table-of-contents.table-of-contents__left-border li {
+    position: relative;
+    user-select: none;
+}
+
+.table-of-contents__link--active {
+    position: relative;
+}
+
+.table-of-contents__link--active:after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 3px;
+    height: 100%;
+    background: var(--ifm-color-primary-dark);
+    margin-left: -15px;
 }

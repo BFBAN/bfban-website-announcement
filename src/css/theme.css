@@ -13,9 +13,11 @@
     --ifm-color-primary-light: #f1e541;
     --ifm-color-primary-lighter: #f2e74e;
     --ifm-color-primary-lightest: #f5ec75;
-    --docusaurus-highlighted-code-line-bg: #f8f9fa;
-
+    --docusaurus-highlighted-code-line-bg: #fff;
+    --ifm-link-color: rgb(from var(--ifm-color-primary) calc(r) calc(g) calc(b + 50) / 1);
     --ifm-footer-background-color: var(--docusaurus-highlighted-code-line-bg);
+    --ifm-blockquote-border-color: var(--ifm-color-primary-lightest);
+    --ifm-blockquote-border-left-width: 10px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

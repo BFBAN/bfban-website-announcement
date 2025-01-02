@@ -116,8 +116,8 @@ export default function Home(): React.ReactElement {
 
                 <div className="container mb-5">
                     <div className="row row-cols-3 align-items-stretch">
-                        <div className="col-12 col-sm-12 col-lg-5">
-                            <div className="d-flex card m-2">
+                        <div className="col-12 col-sm-12 col-lg-6 mb-3">
+                            <div className="card">
                                 <div className="row g-0 h-100">
                                     <div
                                         className="col-3 align-content-center justify-items-center text-center"
@@ -141,8 +141,8 @@ export default function Home(): React.ReactElement {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-12 col-lg-5">
-                            <div className="d-flex card m-2">
+                        <div className="col-12 col-sm-12 col-lg-6 mb-3">
+                            <div className="card">
                                 <div className="row g-0 h-100">
                                     <div
                                         className="col-3 align-content-center justify-items-center text-center"
@@ -161,6 +161,32 @@ export default function Home(): React.ReactElement {
                                                 id="home.updata"></Translate></span>
                                             </p>
                                             <Translate id="exterior-design.description"></Translate>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-sm-12 col-lg-6 mb-3">
+                            <div className="card">
+                                <div className="row g-0 h-100">
+                                    <div
+                                        className="col-3 align-content-center justify-items-center text-center"
+                                        style={{backgroundColor: 'var(--ifm-color-primary)'}}>
+                                        <i className="bi bi-people-fill fs-1 text-white"></i>
+                                    </div>
+                                    <div className="col-8">
+                                        <div className="card-body">
+                                            <Link href="/precepts/tags/recruitment-criteria" target="_self">
+                                                <h3 className="fs-2 text-body-emphasis">
+                                                    <Translate id="recruitment-criteria.title"></Translate>
+                                                </h3>
+                                            </Link>
+                                            <p>
+                                              <span className="badge rounded-pill text-bg-dark">
+                                                  v1
+                                              </span>
+                                            </p>
+                                            <Translate id="recruitment-criteria.description"></Translate>
                                         </div>
                                     </div>
                                 </div>

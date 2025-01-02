@@ -10,8 +10,8 @@ authors: [ Carbon235AALoliS, Fishbat627 ]
 
 * **BFBAN status includes:**
    
-   <Color color="darkseagreen">No record</Color>/<Color color="darkseagreen">Unprocessed</Color>/<Color color="darkseagreen">Invalid report</Color>/<Color color="red">Confirmed hacker</Color>/<Color color="red">Suspicious</Color>/<Color color="darkseagreen">Clean</Color>/<Color color="darkseagreen">Farm weapons</Color>, etc.
-Among them, only the following require subsequent submission of evidence: <Color color="red">Confirmed hacker</Color>/<Color color="red">Suspicious</Color>
+   <Color color="darkseagreen">No record</Color> / <Color color="darkseagreen">Unprocessed</Color> / <Color color="darkseagreen">Invalid report</Color> / <Color color="red">Confirmed hacker</Color> / <Color color="red">Suspicious</Color> / <Color color="darkseagreen">Clean</Color> / <Color color="darkseagreen">Farm weapons</Color>, etc.
+Among them, only the following require subsequent submission of evidence: <Color color="red">Confirmed hacker</Color> / <Color color="red">Suspicious</Color>
    
    BFBAN QQ group: 747413170, or please raise a ticket at: https://discord.gg/yD3ZF7tDpk
 
@@ -84,6 +84,9 @@ Among them, only the following require subsequent submission of evidence: <Color
    1. Misjudgments caused <Color color="burlywood">by spectator bugs and other issues:</Color>
       Please include any evidence in an email and send to ban-appeals@bfban.com, or raise a ticket at:https://discord.gg/yD3ZF7tDpk
 
+---
 
-[^original-1]: (Original)[申诉指南BFBAN和BFVROBOT](/file/BFBAN_appeal_guide-20230918-BFBAN_BFVROBOT.pdf) PDF
-[^original-2]: (Original)[申诉指南BFBAN](/file/BFBAN_appeal_guide-20230918-BFBANonly.pdf) PDF
+**Related document**
+
+- (Original) [Appeal BFBAN and BFVROBOT](/file/BFBAN_appeal_guide-20230918-BFBAN_BFVROBOT.pdf) PDF
+- (Original) [Appeal BFBAN only](/file/BFBAN_appeal_guide-20230918-BFBANonly.pdf) PDF

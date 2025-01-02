@@ -354,5 +354,11 @@
   },
   "exterior-design.description": {
     "message": "公示我们对于图标用途，指导正确使用LOGO以及外链部件"
+  },
+  "recruitment-criteria.title": {
+    "message": "招新规则"
+  },
+  "recruitment-criteria.description": {
+    "message": "面向公众招新标准，成为判决者,从作弊者众多口述、动作中寻找作弊行为，给予作弊者印上'作弊行为确凿'"
   }
 }
