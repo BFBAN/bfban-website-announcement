@@ -24,6 +24,27 @@ footer {
     user-select: none;
 }
 
+footer ul a {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    text-decoration: none !important;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    animation: 0.25s ease 0s 1 normal none running all;
+}
+
+footer ul a:hover {
+    margin-left: -6px;
+    margin-top: -3px;
+    margin-bottom: 4px;
+    border: 1px solid rgba(from var(--ifm-color-primary) r g b / .1);
+    background: rgba(from var(--ifm-color-primary) r g b / .05);
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
 #__docusaurus > footer {
     border-top: 1px solid var(--ifm-toc-border-color);
 }

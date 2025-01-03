@@ -5,7 +5,7 @@ async function getData() {
 }
 
 function GithubContributorsWidget() {
-    const [data, setData] = useState<any>();
+    const [data, setData] = useState<any>({});
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
@@ -34,10 +34,10 @@ function GithubContributorsWidget() {
 
     return (
         <div className="container mt-5 mb-5">
-            {data.map(item => (
+            {data.length >= 0 ? data.map(item => (
                 <img className="border rounded-5 mr-3" style={{width: 40, height: 40}} src={item.avatar_url}
                      key={item.id}/>
-            ))}
+            )) : null}
         </div>
     );
 }

@@ -3,11 +3,6 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type {Options as BlogPluginOptions} from "@docusaurus/plugin-content-blog";
 
-const badges = [
-    'https://github.com/BFBAN/bfban-website-announcement/actions/workflows/deploy.yml/badge.svg?branch=main',
-    'https://img.shields.io/github/contributors/bfban/bfban-website-announcement'
-]
-
 const config: Config = {
     title: 'BFBAN',
     tagline: '',
@@ -24,7 +19,7 @@ const config: Config = {
 
     i18n: {
         defaultLocale: 'zh',
-        locales: ['zh', 'en'],
+        locales: ['zh', 'en', 'ja'],
         localeConfigs: {
             en: {
                 label: 'English',
@@ -33,6 +28,10 @@ const config: Config = {
             zh: {
                 label: '中文',
                 path: 'zh-CN',
+            },
+            ja: {
+                label: '日本语',
+                path: 'ja-JP',
             },
         },
     },
@@ -80,6 +79,21 @@ const config: Config = {
 
     plugins: [
         [
+            '@docusaurus/plugin-sitemap',
+            {
+                lastmod: 'date',
+                changefreq: 'weekly',
+                priority: 0.5,
+                ignorePatterns: ['/tags/**'],
+                filename: 'sitemap.xml',
+                createSitemapItems: async (params) => {
+                    const {defaultCreateSitemapItems, ...rest} = params;
+                    const items = await defaultCreateSitemapItems(rest);
+                    return items.filter((item) => !item.url.includes('/page/'));
+                },
+            },
+        ],
+        [
             '@docusaurus/plugin-content-blog',
             {
                 // https://docusaurus.io/zh-CN/docs/api/plugins/@docusaurus/plugin-content-blog
@@ -87,8 +101,6 @@ const config: Config = {
                 routeBasePath: 'precepts',
                 path: './precepts',
                 blogSidebarCount: 'ALL',
-                blogTitle: "准则",
-                blogDescription: "准则列表",
                 showReadingTime: false,
                 showLastUpdateTime: false,
                 feedOptions: {
@@ -96,7 +108,7 @@ const config: Config = {
                     xslt: true,
                 },
                 // blogListComponent: '@theme/BlogListPage',
-                // blogPostComponent: '@theme/BlogPostPage',
+                blogPostComponent: '@theme/BlogPostPage',
                 // blogTagsListComponent: '@theme/BlogTagsListPage',
                 // blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
                 authorsMapPath: '../authors.yml',
@@ -115,6 +127,7 @@ const config: Config = {
                 routeBasePath: 'blog',
                 path: './blog',
                 authorsMapPath: '../authors.yml',
+                blogPostComponent: '@theme/BlogPostPage',
                 onInlineTags: 'ignore',
                 onInlineAuthors: 'ignore',
                 onUntruncatedBlogPosts: 'ignore',
@@ -130,8 +143,9 @@ const config: Config = {
                 src: 'img/logo.png',
                 className: 'rounded-5',
                 style: {
-                    'width': '35px',
-                    'height': '35px'
+                    'width': '40px',
+                    'height': '40px',
+                    'margin': '-5px 0'
                 }
             },
             items: [
@@ -147,19 +161,6 @@ const config: Config = {
         footer: {
             style: 'light',
             links: [
-                {
-                    title: " ",
-                    items: [
-                        {
-                            prependBaseUrlToHref: '',
-                            html: "<p align='left'><a href='https://bfban.com'><img height='40px' src='https://bfban.com/assets/img/friendly-web.16e0cc25.png' /></a></p>"
-                        },
-                        {
-                            prependBaseUrlToHref: '',
-                            html: `<p align='left'><span class="fw-bold">©Bfban Website Announcement</span> <br/><span class="opacity-50 fw-light">2022-${new Date().getFullYear()}</span></p>`
-                        }
-                    ]
-                },
                 {
                     title: "community",
                     items: [
@@ -207,27 +208,17 @@ const config: Config = {
                             href: "https://bfban.com/link"
                         }
                     ]
-                },
-                {
-                    items: [
-                        {
-                            html: "<p><iframe src=\"https://status.bfban.com/badge\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" width='100%' height='30px'></iframe></p>"
-                        },
-                        ...badges.map((i) => {
-                            return {
-                                html: `<img src="${i}" />`
-                            };
-                        }),
-                        {
-                            html: '<div class="mt-2"><a href="https://pages.cloudflare.com/"><img class="border rounded-2" height="40" src="https://bfban.com/images/links/cloudflare-pages.svg"/></a></div>'
-                        }
-                    ]
                 }
             ]
         },
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
+        },
+        algolia: {
+            appId: 'JR8I8HE5WG',
+            apiKey: '497e426cd188a0ee4d912b6081601b1f',
+            indexName: 'announcement-bot'
         },
     } satisfies Preset.ThemeConfig,
 };
