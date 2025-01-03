@@ -80,6 +80,21 @@ const config: Config = {
 
     plugins: [
         [
+            '@docusaurus/plugin-sitemap',
+            {
+                lastmod: 'date',
+                changefreq: 'weekly',
+                priority: 0.5,
+                ignorePatterns: ['/tags/**'],
+                filename: 'sitemap.xml',
+                createSitemapItems: async (params) => {
+                    const {defaultCreateSitemapItems, ...rest} = params;
+                    const items = await defaultCreateSitemapItems(rest);
+                    return items.filter((item) => !item.url.includes('/page/'));
+                },
+            },
+        ],
+        [
             '@docusaurus/plugin-content-blog',
             {
                 // https://docusaurus.io/zh-CN/docs/api/plugins/@docusaurus/plugin-content-blog
@@ -87,8 +102,6 @@ const config: Config = {
                 routeBasePath: 'precepts',
                 path: './precepts',
                 blogSidebarCount: 'ALL',
-                blogTitle: "准则",
-                blogDescription: "准则列表",
                 showReadingTime: false,
                 showLastUpdateTime: false,
                 feedOptions: {
@@ -130,8 +143,9 @@ const config: Config = {
                 src: 'img/logo.png',
                 className: 'rounded-5',
                 style: {
-                    'width': '35px',
-                    'height': '35px'
+                    'width': '40px',
+                    'height': '40px',
+                    'margin': '-5px 0'
                 }
             },
             items: [
@@ -228,6 +242,11 @@ const config: Config = {
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
+        },
+        algolia: {
+            appId: 'JR8I8HE5WG',
+            apiKey: '497e426cd188a0ee4d912b6081601b1f',
+            indexName: 'announcement-bot'
         },
     } satisfies Preset.ThemeConfig,
 };
