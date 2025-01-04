@@ -1,2 +1,439 @@
 {
+  "theme.ErrorPageContent.title": {
+    "message": "ページがクラッシュしました。",
+    "description": "ページがクラッシュしたときのフォールバック ページのタイトル"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "トップに戻る",
+    "description": "「トップに戻る」ボタンの ARIA ラベル"
+  },
+  "theme.blog.archive.title": {
+    "message": "歴史ブログ",
+    "description": "ブログアーカイブページのページとヒーロータイトル"
+  },
+  "theme.blog.archive.description": {
+    "message": "歴史ブログ",
+    "description": "ブログアーカイブページのページ＆ヒーロー説明"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "ブログ投稿リストのページネーション ナビゲーション",
+    "description": "ブログのページネーションの ARIA ラベル"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "新しいブログ投稿",
+    "description": "新しいブログ投稿ページ (前のページ) に移動するために使用されるラベル"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "古いブログ投稿",
+    "description": "古いブログ投稿ページ (次のページ) に移動するために使用されるラベル"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "ブログページのナビゲーション",
+    "description": "ブログ投稿のページネーションの ARIA ラベル"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "新しい記事",
+    "description": "新しい/前の投稿に移動するためのブログ投稿ボタンのラベル"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "古い記事",
+    "description": "古い/次の投稿に移動するためのブログ投稿ボタンのラベル"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "すべてのタグを表示",
+    "description": "タグ一覧ページを対象としたリンクのラベル"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "ライト/ダーク モードの切り替え (現在は {mode})",
+    "description": "ナビゲーションバーのカラーモード切り替えの ARIA ラベル"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "ダークモード",
+    "description": "ダークカラーモードの名前"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "ライトモード",
+    "description": "ライトカラーモードの名前"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "ページパス",
+    "description": "パンくずリストの ARIA ラベル"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} アイテム",
+    "description": "このカテゴリに含まれるアイテムの数に関する、生成されたインデックス内のカテゴリ カードのデフォルトの説明"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "「ファイル」タブ",
+    "description": "ドキュメントのページネーションの ARIA ラベル"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "前のページへ",
+    "description": "前のドキュメントに移動するために使用されるラベル"
+  },
+  "theme.docs.paginator.next": {
+    "message": "次のページ",
+    "description": "次のドキュメントに移動するために使用されるラベル"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "{count} タグ付きドキュメント",
+    "description": "「{count} タグ付きドキュメント」の複数形ラベル。言語サポートと同じだけ複数形 (「|」で区切る) を使用します (https://www.unicode.org/cldr を参照)。 /cldr-aux/charts/34/supplemental/ language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged}「{tagName}」",
+    "description": "docs タグのページのタイトル"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "バージョン: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "これは、バージョン {siteTitle} {versionLabel} の未リリースのドキュメントです。",
+    "description": "未リリースのドキュメント バージョンを閲覧していることをユーザーに伝えるために使用されるラベル"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "このドキュメントはバージョン {siteTitle} {versionLabel} 用であり、現在はアクティブにメンテナンスされていません。",
+    "description": "メンテナンスされていないドキュメント バージョンを閲覧していることをユーザーに伝えるために使用されるラベル"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "最新のドキュメントについては、{latestVersionLink} ({versionLabel}) を参照してください。",
+    "description": "ユーザーに最新バージョンを確認するように指示するために使用されるラベル"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "最新バージョン",
+    "description": "最新バージョンの提案リンク ラベルに使用されるラベル"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "{heading} への直接リンク",
+    "description": "見出しへのリンクのタイトル"
+  },
+  "theme.common.editThisPage": {
+    "message": "このページを編集する",
+    "description": "現在のページを編集するためのリンク ラベル"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": "{date} で",
+    "description": "ページが最後に更新された日付を表すために使用される単語"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": "{user} による",
+    "description": "ページの最終更新者を説明するために使用される言葉"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "最終 {byUser}{atDate} が更新されました",
+    "description": "ページが最後にいつ更新されたか、誰によって更新されたかを表示するために使用される文"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "バージョンの選択",
+    "description": "モバイルビューのナビゲーションバーバージョンドロップダウンのラベル"
+  },
+  "theme.NotFound.title": {
+    "message": "ページが見つかりません",
+    "description": "404ページのタイトル"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "閉鎖",
+    "description": "アナウンス バーの閉じるボタンの ARIA ラベル"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "ラベル：",
+    "description": "タグリストの横にあるラベル"
+  },
+  "theme.admonition.caution": {
+    "message": "警告する",
+    "description": "注意警告に使用されるデフォルトのラベル (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "危険",
+    "description": "危険警告に使用されるデフォルトのラベル (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "情報",
+    "description": "情報通知に使用されるデフォルトのラベル (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "述べる",
+    "description": "注警告に使用されるデフォルトのラベル (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "ヒント",
+    "description": "チップ警告に使用されるデフォルトのラベル (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "知らせ",
+    "description": "警告警告に使用されるデフォルトのラベル (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "最近のブログ投稿のナビゲーション"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "正常にコピーされました"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "コードをクリップボードにコピー"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "コピー"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "ワードラップの切り替え"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "サイドバー カテゴリ「{label}」を展開します"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "サイドバー カテゴリ「{label}」を折りたたむ"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "メインナビゲーション"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "言語を選択してください"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "このページの概要"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "読むのに {readingTime} 分かかります"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "ドキュメントサイドバー"
+  },
+  "theme.blog.post.readMore": {
+    "message": "続きを読む"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "{title} の全文を読む"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "メインページ"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "サイドバーを折りたたむ"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "サイドバーを折りたたむ"
+  },
+  "theme.NotFound.p1": {
+    "message": "お探しのページが見つかりません。"
+  },
+  "theme.NotFound.p2": {
+    "message": "元のリンク元の Web サイトの所有者に連絡し、リンクが切れていることを通知してください。"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "ナビゲーションバーを閉じる"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "サイドバーを展開する"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "サイドバーを展開する"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← メインメニューに戻る"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "ナビゲーションバーを切り替えます"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} ブログ投稿"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} にはタグ「{tagName}」が含まれています"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "著者",
+    "description": "著者ページのタイトル"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "すべての著者を表示",
+    "description": "ブログ著者ページをターゲットとするリンクのラベル"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "この著者はまだ投稿を書いていません。",
+    "description": "ブログ投稿数が 0 件の著者のテキスト"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "ページがリストされていません",
+    "description": "非公開コンテンツのバナータイトル"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "このページは掲載されていません。検索エンジンによってインデックスは作成されず、直接リンクを持つユーザーのみがアクセスできます。",
+    "description": "非公開コンテンツのバナーメッセージ"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "ドラフトページ",
+    "description": "ドラフトコンテンツのバナータイトル"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "このページはドラフトであり、開発環境でのみ表示され、実稼働ビルドからは除外されます。",
+    "description": "ドラフトコンテンツのバナーメッセージ"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "もう一度やり直してください",
+    "description": "React エラー境界がエラーをキャプチャしたときにレンダリングを再試行するボタンのラベル"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "メインコンテンツにスキップ",
+    "description": "アクセシビリティに使用されるコンテンツへのスキップラベル。キーボードのタブ/入力ナビゲーションでメインコンテンツに素早く移動できます。"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "ラベル",
+    "description": "タグ一覧ページのタイトル"
+  },
+  "precepts.title": {
+    "message": "不正行為防止ルール"
+  },
+  "precepts.description": {
+    "message": "BFBAN チームは、さまざまなケースを処理するための最新の基準に従ってケースを処理します。"
+  },
+  "personnel.title": {
+    "message": "人事規程"
+  },
+  "personnel.description": {
+    "message": "BFBAN チームの新しい人材採用規則、メンバー構成、およびさまざまなメンバーの権利、義務、要件の説明。"
+  },
+  "home.firstEdition": {
+    "message": "初版"
+  },
+  "home.refer": {
+    "message": "読む"
+  },
+  "home.updata": {
+    "message": "最近の更新"
+  },
+  "home.title": {
+    "message": "基準"
+  },
+  "home.description": {
+    "message": "これは BFBAN をリードするための揺るぎない基礎となり、参加するコミュニティ メンバー全員が当初の目標を堅持します。"
+  },
+  "conduct.title": {
+    "message": "行動規範"
+  },
+  "conduct.description": {
+    "message": "BFBAN チームメンバーの日常業務における行動規範。"
+  },
+  "privacy-policy.title": {
+    "message": "プライバシーポリシー"
+  },
+  "privacy-policy.description": {
+    "message": "お客様のプライバシーと個人データを保護することは、当社にとって非常に重要であり、プライベート コンテンツに対する当社の取り組みを公衆に示すことです。"
+  },
+  "exterior-design.title": {
+    "message": "設計仕様"
+  },
+  "exterior-design.description": {
+    "message": "アイコンの使用を発表し、ロゴと外部リンク コンポーネントの正しい使用をガイドします。"
+  },
+  "recruitment-criteria.title": {
+    "message": "採用規定"
+  },
+  "recruitment-criteria.description": {
+    "message": "新たな基準を一般の人々に募集し、裁判官となり、不正行為者の数多くの口頭発言や行動から不正行為を探し出し、不正行為者に「不正行為が確認された」というスタンプを押します。"
+  },
+  "footer.build-description": {
+    "message": "Docusaurus を使用してプログラムを構築します :P"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "{count} の結果をすべて表示"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "{count} ドキュメントが見つかりました"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "「{query}」の検索結果"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "ドキュメント内を検索する"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "ここに検索語を入力してください"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "検索"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "アルゴリアで検索"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "結果が見つかりませんでした"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "新しい検索結果を取得しています..."
+  },
+  "theme.SearchBar.label": {
+    "message": "検索"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "クエリをクリアする"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "キャンセル"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "最近の検索"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "最近の検索はありません"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "この検索を保存します"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "この検索を履歴から削除します"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "集める"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "この検索をお気に入りリストから削除します"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "結果が得られない"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "ネットワーク接続を確認する必要がある場合があります。"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "選択された"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enterキー"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "ナビゲーション"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "上キー"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "下矢印"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "閉鎖"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "ESC"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "オファーを検索する"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "結果なし:"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "検索してみてください"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "このクエリには結果が必要だと思いますか?"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "ぜひお知らせください。"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "文書の検索"
+  }
 }
