@@ -1,2 +1,17 @@
 {
+  "title": {
+    "message": "BFBAN"
+  },
+  "logo.alt": {
+    "message": "ロゴ"
+  },
+  "item.label.mainWebsite": {
+    "message": "メインサイト"
+  },
+  "item.label.precepts": {
+    "message": "基準"
+  },
+  "item.label.blog": {
+    "message": "発表"
+  }
 }
