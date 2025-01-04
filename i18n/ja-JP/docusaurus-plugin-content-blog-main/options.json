@@ -1,2 +1,11 @@
 {
+  "title": {
+    "message": "発表"
+  },
+  "description": {
+    "message": "お知らせ一覧"
+  },
+  "sidebar.title": {
+    "message": "日付"
+  }
 }
