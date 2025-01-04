@@ -33,31 +33,32 @@ export default function BlogPostItemFooter(): ReactNode {
     const canDisplayEditMetaRow = !!(editUrl || lastUpdatedAt || lastUpdatedBy);
 
     return (
-      <footer className="docusaurus-mt-lg">
-        {tagsExists && (
-          <div
-            className={clsx(
-              'row',
-              'margin-top--sm',
-              ThemeClassNames.blog.blogFooterEditMetaRow,
-            )}>
-            <div className="col">
-              <TagsListInline tags={tags} />
-            </div>
-          </div>
-        )}
-        {canDisplayEditMetaRow && (
-          <EditMetaRow
-            className={clsx(
-              'margin-top--sm',
-              ThemeClassNames.blog.blogFooterEditMetaRow,
-            )}
-            editUrl={editUrl}
-            lastUpdatedAt={lastUpdatedAt}
-            lastUpdatedBy={lastUpdatedBy}
-          />
-        )}
-      </footer>
+        <footer className="docusaurus-mt-lg">
+          {tagsExists && (
+              <div
+                  className={clsx(
+                      'row',
+                      'margin-top--sm',
+                      ThemeClassNames.blog.blogFooterEditMetaRow,
+                  )}>
+                <div className="col">
+                  <i className="bi bi-tags-fill"></i>
+                  <TagsListInline tags={tags}/>
+                </div>
+              </div>
+          )}
+          {canDisplayEditMetaRow && (
+              <EditMetaRow
+                  className={clsx(
+                      'margin-top--sm',
+                      ThemeClassNames.blog.blogFooterEditMetaRow,
+                  )}
+                  editUrl={editUrl}
+                  lastUpdatedAt={lastUpdatedAt}
+                  lastUpdatedBy={lastUpdatedBy}
+              />
+          )}
+        </footer>
     );
   }
   // BlogPost footer - list view

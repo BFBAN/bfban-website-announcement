@@ -2,6 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type {Options as BlogPluginOptions} from "@docusaurus/plugin-content-blog";
+import remarkGFM from "remark-gfm"
 
 const config: Config = {
     title: 'BFBAN',
@@ -115,7 +116,8 @@ const config: Config = {
                 onInlineAuthors: 'ignore',
                 onUntruncatedBlogPosts: 'ignore',
                 remarkPlugins: [
-                    require('remark-gfm')
+                    [remarkGFM, {singleTilde: false}],
+                    require('remark-breaks'),
                 ]
             } satisfies BlogPluginOptions
         ],
@@ -138,6 +140,10 @@ const config: Config = {
                 onInlineTags: 'ignore',
                 onInlineAuthors: 'ignore',
                 onUntruncatedBlogPosts: 'ignore',
+                remarkPlugins: [
+                    [remarkGFM, {singleTilde: false}],
+                    require('remark-breaks'),
+                ]
             } satisfies BlogPluginOptions,
         ]
     ],

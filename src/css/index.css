@@ -193,3 +193,34 @@ nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
     display: inline-block;
     margin-right: 5px;
 }
+
+.footnotes {
+    margin: 0 -25px -25px -25px;
+    padding: 20px 25px 0 25px;
+    border-top: 1px solid var(--ifm-toc-border-color);
+}
+
+.footnotes p {
+    margin: 0 !important;
+}
+
+.footnotes h2 {
+    display: flex;
+    color: rgb(from var(--bs-body-color) r g b / .2) !important;
+    font-size: 15px;
+}
+
+.footnotes h2:before {
+    display: block;
+    margin-right: 5px;
+    margin-top: 2px;
+    content: "\F197";
+    color: rgb(from var(--bs-body-color) r g b / .6) !important;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+}
