@@ -81,6 +81,7 @@ const config: Config = {
         [
             '@docusaurus/plugin-sitemap',
             {
+                id: 'sitemap-all',
                 lastmod: 'date',
                 changefreq: 'weekly',
                 priority: 0.5,
