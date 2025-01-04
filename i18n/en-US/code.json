@@ -163,112 +163,85 @@
     "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Recent blog navigation",
-    "description": "The ARIA label for recent posts in the blog sidebar"
+    "message": "Recent blog navigation"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copy Success",
-    "description": "The copied button label on code blocks"
+    "message": "Copy Success"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copy code to clipboard",
-    "description": "The ARIA label for copy code blocks button"
+    "message": "Copy code to clipboard"
   },
   "theme.CodeBlock.copy": {
-    "message": "copy",
-    "description": "The copy button label on code blocks"
+    "message": "copy"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
+    "message": "Toggle word wrap"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Expand sidebar category '{label}'",
-    "description": "The ARIA label to expand the sidebar category"
+    "message": "Expand sidebar category '{label}'"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Collapse sidebar category '{label}'",
-    "description": "The ARIA label to collapse the sidebar category"
+    "message": "Collapse sidebar category '{label}'"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Main navigation",
-    "description": "The ARIA label for the main navigation"
+    "message": "Main navigation"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Select language",
-    "description": "The label for the mobile language switcher dropdown"
+    "message": "Select language"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "Overview of this page",
-    "description": "The label used by the button on the collapsible TOC component"
+    "message": "Overview of this page"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} minutes to read",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr /cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{readingTime} minutes to read"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Documentation Sidebar",
-    "description": "The ARIA label for the sidebar navigation"
+    "message": "Documentation Sidebar"
   },
   "theme.blog.post.readMore": {
-    "message": "Read more",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
+    "message": "Read more"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Read the full article of {title}",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
+    "message": "Read the full article of {title}"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Main Page",
-    "description": "The ARIA label for the home page in the breadcrumbs"
+    "message": "Main Page"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Close sidebar",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "Close sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Close sidebar",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "Close sidebar"
   },
   "theme.NotFound.p1": {
-    "message": "We couldn't find the page you were looking for.",
-    "description": "The first paragraph of the 404 page"
+    "message": "We couldn't find the page you were looking for."
   },
   "theme.NotFound.p2": {
-    "message": "Please contact the owner of the website from which the original link came and inform them that the link is broken.",
-    "description": "The 2nd paragraph of the 404 page"
+    "message": "Please contact the owner of the website from which the original link came and inform them that the link is broken."
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close the navigation bar",
-    "description": "The ARIA label for close button of mobile sidebar"
+    "message": "Close the navigation bar"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand Sidebar",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "Expand Sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand Sidebar",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "Expand Sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Back to main menu",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+    "message": "← Back to main menu"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Toggle navigation bar",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
+    "message": "Toggle navigation bar"
   },
   "theme.blog.post.plurals": {
-    "message": "{count} blog posts",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/ cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{count} blog posts"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} contains the tag \"{tagName}\"",
-    "description": "The title of the page for a blog tag"
+    "message": "{nPosts} contains the tag \"{tagName}\""
   },
   "theme.blog.author.pageTitle": {
-    "message": "{authorName} - {nPosts}",
-    "description": "The title of the page for a blog author"
+    "message": "{authorName} - {nPosts}"
   },
   "theme.blog.authorsList.pageTitle": {
     "message": "Authors",
@@ -354,5 +327,113 @@
   },
   "exterior-design.description": {
     "message": "Publicize our use of icons and guide the correct use of LOGO and external link components"
+  },
+  "recruitment-criteria.title": {
+    "message": "Recruitment Rules"
+  },
+  "recruitment-criteria.description": {
+    "message": "New standards for recruiting the public, becoming the judge, finding cheating behaviors from the cheaters' many oral statements and actions, and giving the cheaters the stamp of \"cheating behavior is confirmed\""
+  },
+  "footer.build-description": {
+    "message": "Use Docusaurus to build your application:"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "View all {count} results"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "{count} files found"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Search results for \"{query}\""
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Search in Documents"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Enter your search term here"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "search"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Search via Algolia"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "No results found"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Fetching new search results..."
+  },
+  "theme.SearchBar.label": {
+    "message": "search"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Clear Query"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Cancel"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Recent Searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "No recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Save this search"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Delete this search from history"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "collect"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Remove this search from your favorites list"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Unable to obtain results"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "You may need to check your network connection."
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "Select"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enter key"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "navigation"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Up Arrow"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Down Arrow"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "closure"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Esc"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Search offers"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "No results:"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Try searching"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Think this query should have results?"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Please let us know."
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "Search Documents"
   }
 }
