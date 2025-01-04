@@ -6,7 +6,7 @@ import {
     useBlogPost,
 } from '@docusaurus/plugin-content-blog/client';
 import BlogLayout from '../BlogLayout/index';
-import BlogPostItem from '@theme/BlogPostItem';
+import BlogPostItem from '../BlogPostItem';
 import BlogPostPaginator from '@theme/BlogPostPaginator';
 import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
 import BlogPostPageStructuredData from '@theme/BlogPostPage/StructuredData';

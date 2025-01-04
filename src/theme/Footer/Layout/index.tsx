@@ -28,7 +28,7 @@ export default function FooterLayout({
                         <p><span className="fw-bold">©Bfban Website Announcement</span> <br/><span
                             className="opacity-50 fw-light">2022-{new Date().getFullYear()}</span></p>
                         <p className="fs-6 opacity-50">
-                            <Translate id="footer.build-description">使用 Docusaurus 来构建程序:P</Translate>
+                            <Translate id="footer.build-description"></Translate>
                         </p>
                     </div>
                     <div className="col-7 col-lg-7 col-sm-12">

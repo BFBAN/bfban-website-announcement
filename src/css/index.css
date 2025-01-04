@@ -148,3 +148,7 @@ footer ul a:hover {
     background: var(--ifm-color-primary-dark);
     margin-left: -15px;
 }
+
+.pagination-nav__link {
+    background: var(--ifm-footer-background-color);
+}
