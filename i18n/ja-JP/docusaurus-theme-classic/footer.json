@@ -1,2 +1,47 @@
 {
+  "link.item.label.connection": {
+    "message": "接続する"
+  },
+  "link.item.label.link": {
+    "message": "フレンドリーリンク"
+  },
+  "link.item.label.community": {
+    "message": "コミュニティ"
+  },
+  "link.item.label.about": {
+    "message": "について"
+  },
+  "link.item.label.contactUs": {
+    "message": "お問い合わせ"
+  },
+  "link.item.label.other": {
+    "message": "他の"
+  },
+  "link.title. ": {
+    "message": " "
+  },
+  "link.title.community": {
+    "message": "コミュニティ"
+  },
+  "link.title.connection": {
+    "message": "接続する"
+  },
+  "link.title.other": {
+    "message": "他の"
+  },
+  "link.item.label.Gametool discord": {
+    "message": "ゲームツールの不和"
+  },
+  "link.item.label.BFBAN bfvrobot kook": {
+    "message": "BFBAN bfvロボットクック"
+  },
+  "link.item.label.github (website)": {
+    "message": "github (ウェブサイト)"
+  },
+  "link.item.label.github (announcement)": {
+    "message": "github (アナウンス)"
+  },
+  "link.item.label.QQ Group": {
+    "message": "QQグループ"
+  }
 }
