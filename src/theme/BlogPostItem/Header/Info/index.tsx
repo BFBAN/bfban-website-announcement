@@ -10,66 +10,68 @@ import styles from './styles.module.css';
 
 // Very simple pluralization: probably good enough for now
 function useReadingTimePlural() {
-  const {selectMessage} = usePluralForm();
-  return (readingTimeFloat: number) => {
-    const readingTime = Math.ceil(readingTimeFloat);
-    return selectMessage(
-      readingTime,
-      translate(
-        {
-          id: 'theme.blog.post.readingTime.plurals',
-          description:
-            'Pluralized label for "{readingTime} min read". Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
-          message: 'One min read|{readingTime} min read',
-        },
-        {readingTime},
-      ),
-    );
-  };
+    const {selectMessage} = usePluralForm();
+    return (readingTimeFloat: number) => {
+        const readingTime = Math.ceil(readingTimeFloat);
+        return selectMessage(
+            readingTime,
+            translate(
+                {
+                    id: 'theme.blog.post.readingTime.plurals',
+                    description:
+                        'Pluralized label for "{readingTime} min read". Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
+                    message: 'One min read|{readingTime} min read',
+                },
+                {readingTime},
+            ),
+        );
+    };
 }
 
-function ReadingTime({readingTime}: {readingTime: number}) {
-  const readingTimePlural = useReadingTimePlural();
-  return <>{readingTimePlural(readingTime)}</>;
+function ReadingTime({readingTime}: { readingTime: number }) {
+    const readingTimePlural = useReadingTimePlural();
+    return <>{readingTimePlural(readingTime)}</>;
 }
 
 function DateTime({
-  date,
-  formattedDate,
-}: {
-  date: string;
-  formattedDate: string;
+                      date,
+                      formattedDate,
+                  }: {
+    date: string;
+    formattedDate: string;
 }) {
-  return <time dateTime={date}>{formattedDate}</time>;
+    return <time dateTime={date}>{formattedDate}</time>;
 }
 
 function Spacer() {
-  return <>{' · '}</>;
+    return <>{' · '}</>;
 }
 
 export default function BlogPostItemHeaderInfo({className}: Props): ReactNode {
-  const {metadata} = useBlogPost();
-  const {date, readingTime} = metadata;
+    const {metadata} = useBlogPost();
+    const {date, lastUpdatedAt, description, readingTime} = metadata;
 
-  const dateTimeFormat = useDateTimeFormat({
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-    timeZone: 'UTC',
-  });
+    const dateTimeFormat = useDateTimeFormat({
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+        timeZone: 'UTC',
+    });
 
-  const formatDate = (blogDate: string) =>
-    dateTimeFormat.format(new Date(blogDate));
+    const formatDate = (blogDate: string) =>
+        dateTimeFormat.format(new Date(blogDate));
 
-  return (
-    <div className={clsx(styles.container, 'margin-vert--md', className)}>
-      <DateTime date={date} formattedDate={formatDate(date)} />
-      {typeof readingTime !== 'undefined' && (
-        <>
-          <Spacer />
-          <ReadingTime readingTime={readingTime} />
-        </>
-      )}
-    </div>
-  );
+    return (
+        <div className={clsx(styles.container, 'margin-vert--md', className)}>
+            <i className="bi bi-calendar-date"></i>
+            <DateTime date={date} formattedDate={formatDate(date)}/>
+            {typeof readingTime !== 'undefined' && (
+                <>
+                    <Spacer/>
+                    <i className="bi bi-book"></i>
+                    <ReadingTime readingTime={readingTime}/>
+                </>
+            )}
+        </div>
+    );
 }

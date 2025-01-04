@@ -20,11 +20,11 @@ main *::marker {
     background: transparent;
 }
 
-footer {
+footer.footer {
     user-select: none;
 }
 
-footer ul a {
+footer.footer ul a {
     display: inline-block;
     margin-bottom: 6px;
     font-size: 13px;
@@ -35,7 +35,7 @@ footer ul a {
     animation: 0.25s ease 0s 1 normal none running all;
 }
 
-footer ul a:hover {
+footer.footer ul a:hover {
     margin-left: -6px;
     margin-top: -3px;
     margin-bottom: 4px;
@@ -43,6 +43,42 @@ footer ul a:hover {
     background: rgba(from var(--ifm-color-primary) r g b / .05);
     padding: 1px 5px;
     border-radius: 5px;
+}
+
+nav.sidebar_brwN ul a {
+    font-size: inherit;
+    margin-left: 10px;
+    display: inline-flex !important;
+    text-decoration: none !important;
+    animation: 0.25s ease 0s 1 normal none running all;
+}
+
+nav.sidebar_brwN ul a:hover {
+    margin-left: 4px;
+    margin-top: -3px;
+    margin-bottom: -2px;
+    border: 1px solid rgba(from var(--ifm-color-primary) r g b / .5);
+    background: rgba(from var(--ifm-color-primary) r g b / .1);
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm {
+    position: relative;
+}
+
+nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 0;
+    left: 6px;
+    border-radius: 10px;
+    width: 3px;
+    height: 100%;
+    background: var(--ifm-color-primary-dark);
+    margin-left: -15px;
 }
 
 #__docusaurus > footer {
@@ -151,4 +187,9 @@ footer ul a:hover {
 
 .pagination-nav__link {
     background: var(--ifm-footer-background-color);
+}
+
+.bi::before {
+    display: inline-block;
+    margin-right: 5px;
 }

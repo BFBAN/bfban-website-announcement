@@ -10,6 +10,7 @@ import type {Props as BlogSidebarContentProps} from '@theme/BlogSidebar/Content'
 import type {Props} from '@theme/BlogSidebar/Desktop';
 
 import styles from './styles.module.css';
+import Link from "@docusaurus/Link";
 
 const ListComponent: BlogSidebarContentProps['ListComponent'] = ({items}) => {
   return (
@@ -26,24 +27,25 @@ const ListComponent: BlogSidebarContentProps['ListComponent'] = ({items}) => {
 function BlogSidebarDesktop({sidebar}: Props) {
   const items = useVisibleBlogSidebarItems(sidebar.items);
   return (
-    <aside className="col col--2">
-      <nav
-        className={clsx(styles.sidebar, 'thin-scrollbar')}
-        aria-label={translate({
-          id: 'theme.blog.sidebar.navAriaLabel',
-          message: 'Blog recent posts navigation',
-          description: 'The ARIA label for recent posts in the blog sidebar',
-        })}>
-        <div className={clsx(styles.sidebarItemTitle, 'margin-bottom--md')}>
-          {sidebar.title}
-        </div>
-        <BlogSidebarContent
-          items={items}
-          ListComponent={ListComponent}
-          yearGroupHeadingClassName={styles.yearGroupHeading}
-        />
-      </nav>
-    </aside>
+      <aside className="col col--2">
+          <nav
+              className={clsx(styles.sidebar, 'thin-scrollbar')}
+              aria-label={translate({
+                  id: 'theme.blog.sidebar.navAriaLabel',
+                  message: 'Blog recent posts navigation',
+                  description: 'The ARIA label for recent posts in the blog sidebar',
+              })}>
+
+              <div className={clsx(styles.sidebarItemTitle, 'margin-bottom--md')}>
+                  {sidebar.title}
+              </div>
+              <BlogSidebarContent
+                  items={items}
+                  ListComponent={ListComponent}
+                  yearGroupHeadingClassName={styles.yearGroupHeading}
+              />
+          </nav>
+      </aside>
   );
 }
 
