@@ -57,7 +57,7 @@ const config: Config = {
             crossOrigin: "anonymous"
         },
         {
-            src: '/js/bootstrap@5.3.3.bundle.min.js',
+            src: '/js/bootstrap.bundle@5.3.3.min.js',
             crossOrigin: "anonymous"
         }
     ],

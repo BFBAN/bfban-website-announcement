@@ -4,12 +4,13 @@ import {
     splitNavbarItems,
     useNavbarMobileSidebar,
 } from '@docusaurus/theme-common/internal';
-import NavbarItem, {type Props as NavbarItemConfig} from '@theme/NavbarItem';
+import {type Props as NavbarItemConfig} from '@theme/NavbarItem';
+import NavbarItem from "../../NavbarItem"
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
-import NavbarSearch from '@theme/Navbar/Search';
+import NavbarSearch from '../Search';
 
 import styles from './styles.module.css';
 import Link from "@docusaurus/Link";
@@ -42,14 +43,17 @@ ${JSON.stringify(item, null, 2)}`,
 
 function NavbarContentLayout({
                                  left,
+                                 center,
                                  right,
                              }: {
     left: ReactNode;
+    center?: ReactNode;
     right: ReactNode;
 }) {
     return (
         <div className="navbar__inner">
             <div className="navbar__items">{left}</div>
+            <div className="navbar__items">{center}</div>
             <div className="navbar__items navbar__items--right">{right}</div>
         </div>
     );
@@ -77,13 +81,13 @@ export default function NavbarContent(): ReactNode {
                 // TODO stop hardcoding items?
                 // Ask the user to add the respective navbar items => more flexible
                 <>
-                    <NavbarItems items={rightItems}/>
-                    <NavbarColorModeToggle className={styles.colorModeToggle}/>
                     {!searchBarItem && (
                         <NavbarSearch>
-                            <SearchBar/>
+                            <SearchBar />
                         </NavbarSearch>
                     )}
+                    <NavbarItems items={rightItems}/>
+                    <NavbarColorModeToggle className={styles.colorModeToggle}/>
                     <Link href="//bfban.com/apps" className="navbar__item navbar__link">
                         <i className="fs-5 bi bi-grid-3x3-gap-fill"></i>
                     </Link>

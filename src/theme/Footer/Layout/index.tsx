@@ -6,7 +6,7 @@ import Translate from "@docusaurus/Translate";
 const badges = [
     'https://github.com/BFBAN/bfban-website-announcement/actions/workflows/deploy.yml/badge.svg?branch=main',
     'https://img.shields.io/github/contributors/bfban/bfban-website-announcement'
-]
+];
 
 export default function FooterLayout({
                                          style,
@@ -36,10 +36,11 @@ export default function FooterLayout({
                     </div>
                     <div className="col-2 col-lg-2 col-sm-12">
                         <p>
-                            <iframe src="https://status.bfban.com/badge" allowTransparency={true} frameBorder={0}
+                            <iframe src="https://status.bfban.com/badge"
+                                    frameBorder={0}
                                     scrolling="no" width='100%' height='30px'></iframe>
                         </p>
-                        {badges.map((i) => (<img src={i}/>))}
+                        {badges.map((i) => (<img key={i} src={i}/>))}
                         <div className="mt-2">
                             <a href="https://pages.cloudflare.com/">
                                 <img className="border rounded-2"

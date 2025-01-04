@@ -3,6 +3,7 @@ import {useColorMode, useThemeConfig} from '@docusaurus/theme-common';
 import ColorModeToggle from '@theme/ColorModeToggle';
 import type {Props} from '@theme/Navbar/ColorModeToggle';
 import styles from './styles.module.css';
+import clsx from "clsx";
 
 export default function NavbarColorModeToggle({className}: Props): ReactNode {
   const navbarStyle = useThemeConfig().navbar.style;
@@ -15,7 +16,7 @@ export default function NavbarColorModeToggle({className}: Props): ReactNode {
 
   return (
     <ColorModeToggle
-      className={className}
+      className={clsx('navbar__link', className)}
       buttonClassName={
         navbarStyle === 'dark' ? styles.darkNavbarColorModeToggle : undefined
       }

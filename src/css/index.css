@@ -194,6 +194,11 @@ nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
     margin-right: 5px;
 }
 
+.DocSearch-Button {
+    min-width: 200px;
+    margin-left: calc(-50px) !important;
+}
+
 .footnotes {
     margin: 0 -25px -25px -25px;
     padding: 20px 25px 0 25px;

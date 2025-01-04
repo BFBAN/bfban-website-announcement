@@ -1,6 +1,6 @@
 import React, {type ReactNode} from 'react';
-import NavbarLayout from '@theme/Navbar/Layout';
-import NavbarContent from '@theme/Navbar/Content';
+import NavbarLayout from './Layout';
+import NavbarContent from './Content';
 
 import Lantern from "@site/src/components/_Lantern"
 

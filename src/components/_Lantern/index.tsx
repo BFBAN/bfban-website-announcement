@@ -8,7 +8,7 @@ export default function Index({}) {
              v-if="nowTime >= new Date('2024 12-31').getTime() && nowTime <= new Date('2025 2-4').getTime()">
             <div className="lantern-box">
                 {['left', 'right'].map(i => (
-                    <div className={`lantern ${i}-lantern`}>
+                    <div className={`lantern ${i}-lantern`} key={i}>
                         <div className="lantern-rope lantern-top-rope "></div>
                         <div className="lantern-handle lantern-top-handle"></div>
                         <div className="lantern-center">新年</div>
