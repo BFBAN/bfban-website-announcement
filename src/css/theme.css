@@ -18,7 +18,10 @@
     --ifm-footer-background-color: var(--docusaurus-highlighted-code-line-bg);
     --ifm-blockquote-border-color: var(--ifm-color-primary-lightest);
     --ifm-blockquote-border-left-width: 10px;
-    --ifm-spacing-horizontal: 5px;
+    --ifm-spacing-horizontal: 1rem;
+    --ifm-container-width: 1320px;
+    --ifm-container-width-sm: 1320px;
+    --ifm-container-width-xl: 1450px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

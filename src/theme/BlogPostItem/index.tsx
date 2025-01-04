@@ -18,7 +18,7 @@ export default function BlogPostItem({children, className}: Props): ReactNode {
     return (
         <div className="mb-4">
             <BlogPostItemContainer
-                className={clsx("card h-100 overflow-hidden rounded-2 " + containerClassName, className + " p-3")}>
+                className={clsx("card h-100 overflow-hidden rounded-2 " + containerClassName, className + " p-4")}>
                 <BlogPostItemHeader/>
                 <BlogPostItemContent>{children}</BlogPostItemContent>
                 <BlogPostItemFooter/>

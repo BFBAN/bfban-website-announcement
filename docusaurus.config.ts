@@ -38,25 +38,25 @@ const config: Config = {
 
     stylesheets: [
         {
-            href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
+            href: "/css/bootstrap@5.3.3.min.css",
             rel: "stylesheet",
             crossOrigin: "anonymous"
         }, {
-            href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css'
+            href: '/css/bootstrap-icons@1.10.4.css'
         }
     ],
 
     scripts: [
         {
-            src: 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js',
+            src: '/js/popper.min@2.11.8.js',
             crossOrigin: "anonymous"
         },
         {
-            src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js',
+            src: '/js/bootstrap@5.3.3.min.js',
             crossOrigin: "anonymous"
         },
         {
-            src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
+            src: '/js/bootstrap@5.3.3.bundle.min.js',
             crossOrigin: "anonymous"
         }
     ],
@@ -110,7 +110,7 @@ const config: Config = {
                 },
                 blogListComponent: '@theme/BlogListPage',
                 blogPostComponent: '@theme/BlogPostPage',
-                // blogTagsListComponent: '@theme/BlogTagsListPage',
+                blogTagsListComponent: '@theme/BlogTagsListPage',
                 // blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
                 authorsMapPath: '../authors.yml',
                 onInlineTags: 'ignore',
@@ -131,6 +131,7 @@ const config: Config = {
                 authorsMapPath: '../authors.yml',
                 blogListComponent: '@theme/BlogListPage',
                 blogPostComponent: '@theme/BlogPostPage',
+                blogTagsListComponent: '@theme/BlogTagsListPage',
                 onInlineTags: 'ignore',
                 onInlineAuthors: 'ignore',
                 onUntruncatedBlogPosts: 'ignore',

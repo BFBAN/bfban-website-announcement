@@ -29,6 +29,7 @@ export default function BlogPostItemHeaderAuthors({
       {authors.map((author, idx) => (
         <div
           className={clsx(
+            'mt-1 mb-2',
             !imageOnly && (singleAuthor ? 'col col--12' : 'col col--6'),
             imageOnly ? styles.imageOnlyAuthorCol : styles.authorCol,
           )}
