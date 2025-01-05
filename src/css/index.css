@@ -199,6 +199,16 @@ nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
     margin-left: calc(-50px) !important;
 }
 
+.markdown ul > p,
+.markdown li > p,
+.markdown blockquote > p {
+    text-indent: 0 !important;
+}
+
+.markdown p {
+    text-indent: 2rem;
+}
+
 .blog-tags b {
     color: rgb(from var(--bs-body-color) r g b / .2) !important;
     font-size: 15px;

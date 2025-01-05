@@ -145,7 +145,14 @@ const config: Config = {
                     require('remark-breaks'),
                 ]
             } satisfies BlogPluginOptions,
-        ]
+        ],
+        [
+            '@docusaurus/plugin-google-gtag',
+            {
+                trackingID: 'G-JZ5QGTWE2R',
+                anonymizeIP: true,
+            },
+        ],
     ],
 
     themeConfig: {

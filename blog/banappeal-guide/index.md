@@ -35,8 +35,6 @@ tags: [ guide ]
 
 ## 这里涵盖了所有的申诉指南，如有遗漏请在群里询问
 
-### 1. 教程遇到问题
-
 :::tip
 
 如果你已经开挂，就没必要再看下方申诉指南了
@@ -92,4 +90,4 @@ tags: [ guide ]
 
 **相关文档**
 
-暂无
+- (原文) [BFBAN申诉指南](https://docs.qq.com/doc/DVklNT2xYblV3ZnFC?dver=) 网址
