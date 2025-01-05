@@ -199,6 +199,15 @@ nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
     margin-left: calc(-50px) !important;
 }
 
+.blog-tags b {
+    color: rgb(from var(--bs-body-color) r g b / .2) !important;
+    font-size: 15px;
+}
+
+.blog-tags .tags-icon {
+    color: rgb(from var(--bs-body-color) r g b / .6) !important;
+}
+
 .footnotes {
     margin: 0 -25px -25px -25px;
     padding: 20px 25px 0 25px;

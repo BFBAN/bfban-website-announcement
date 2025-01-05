@@ -41,8 +41,8 @@ export default function BlogPostItemFooter(): ReactNode {
                       'margin-top--sm',
                       ThemeClassNames.blog.blogFooterEditMetaRow,
                   )}>
-                <div className="col">
-                  <i className="bi bi-tags-fill"></i>
+                <div className="col blog-tags">
+                  <i className="tags-icon bi bi-tags-fill"></i>
                   <TagsListInline tags={tags}/>
                 </div>
               </div>
