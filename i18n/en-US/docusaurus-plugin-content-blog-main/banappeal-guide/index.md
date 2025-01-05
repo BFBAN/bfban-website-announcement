@@ -1,7 +1,9 @@
 ---
+slug: 2024/01/16/appeal-guidelines
 title: BFBAN Appeal Guidelines
 date: 2024-01-16 15:17
 authors: [ Carbon235AALoliS, Fishbat627 ]
+tags: [ guide ]
 ---
 
 <!-- truncate -->
