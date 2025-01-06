@@ -13,6 +13,7 @@ import React, {type ReactNode} from "react";
 import clsx from "clsx";
 import {ThemeClassNames} from "@docusaurus/theme-common";
 import BiliBiliShareButton from "@site/src/theme/BlogPostItem/Footer/Share/BiliBiliShareButton";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const BiliBiliIcon = createIcon({
     color: '#fb7299',
@@ -31,33 +32,36 @@ export default function ShareWidget(): ReactNode {
                 'margin-top--sm',
                 ThemeClassNames.blog.blogFooterEditMetaRow,
             )}>
-
-            <div className="col" style={{marginLeft: '-5px'}}>
-                <FacebookShareButton url={window.location.href} hashtag="#docusaurus" className="p-1">
-                    <FacebookIcon size={shareIconSize} round/>
-                </FacebookShareButton>
-                <TwitterShareButton url={window.location.href} className="p-1">
-                    <XIcon size={shareIconSize} round/>
-                </TwitterShareButton>
-                <WeiboShareButton url={window.location.href} className="p-1">
-                    <WeiboIcon size={shareIconSize} round></WeiboIcon>
-                </WeiboShareButton>
-                <TelegramShareButton url={window.location.href} className="p-1">
-                    <TelegramIcon size={shareIconSize} round></TelegramIcon>
-                </TelegramShareButton>
-                <RedditShareButton url={window.location.href} className="p-1">
-                    <RedditIcon size={shareIconSize} round></RedditIcon>
-                </RedditShareButton>
-                <WhatsappShareButton url={window.location.href} className="p-1">
-                    <WhatsappIcon size={shareIconSize} round></WhatsappIcon>
-                </WhatsappShareButton>
-                <BiliBiliShareButton url={window.location.href} className="p-1">
-                    <BiliBiliIcon size={shareIconSize} round/>
-                </BiliBiliShareButton>
-                <EmailShareButton url={window.location.href} className="p-1">
-                    <EmailIcon size={shareIconSize} round></EmailIcon>
-                </EmailShareButton>
-            </div>
+            <BrowserOnly>
+                {() => (
+                    <div className="col" style={{marginLeft: '-5px'}}>
+                        <FacebookShareButton url={window.location.href} hashtag="#docusaurus" className="p-1">
+                            <FacebookIcon size={shareIconSize} round/>
+                        </FacebookShareButton>
+                        <TwitterShareButton url={window.location.href} className="p-1">
+                            <XIcon size={shareIconSize} round/>
+                        </TwitterShareButton>
+                        <WeiboShareButton url={window.location.href} className="p-1">
+                            <WeiboIcon size={shareIconSize} round></WeiboIcon>
+                        </WeiboShareButton>
+                        <TelegramShareButton url={window.location.href} className="p-1">
+                            <TelegramIcon size={shareIconSize} round></TelegramIcon>
+                        </TelegramShareButton>
+                        <RedditShareButton url={window.location.href} className="p-1">
+                            <RedditIcon size={shareIconSize} round></RedditIcon>
+                        </RedditShareButton>
+                        <WhatsappShareButton url={window.location.href} className="p-1">
+                            <WhatsappIcon size={shareIconSize} round></WhatsappIcon>
+                        </WhatsappShareButton>
+                        <BiliBiliShareButton url={window.location.href} className="p-1">
+                            <BiliBiliIcon size={shareIconSize} round/>
+                        </BiliBiliShareButton>
+                        <EmailShareButton url={window.location.href} className="p-1">
+                            <EmailIcon size={shareIconSize} round></EmailIcon>
+                        </EmailShareButton>
+                    </div>
+                )}
+            </BrowserOnly>
         </div>
     );
 }

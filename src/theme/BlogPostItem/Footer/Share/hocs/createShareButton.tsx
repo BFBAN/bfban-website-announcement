@@ -40,7 +40,6 @@ function createShareButton<
     }
 
     CreatedButton.displayName = `ShareButton-${networkName}`;
-
     // @ts-ignore
     return forwardRef(CreatedButton);
 }

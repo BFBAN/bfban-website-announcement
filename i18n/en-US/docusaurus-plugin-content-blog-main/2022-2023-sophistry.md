@@ -1,6 +1,6 @@
 ---
-slug: sophistry
-title: 2023-2024 Cheating Player Sophistry Bible
+slug: sophistry-2022-2023
+title: 2022-2023 Cheating Player Sophistry Bible
 date: 2023-10-15
 authors: [ Carbon235AALoliS , Yueye , Fishbat627 ]
 ---

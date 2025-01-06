@@ -146,7 +146,6 @@ const config: Config = {
                     require('remark-breaks'),
                 ],
                 editUrl: 'https://github.com/BFBAN/bfban-website-announcement/edit/main/',
-
             } satisfies BlogPluginOptions,
         ],
         [
