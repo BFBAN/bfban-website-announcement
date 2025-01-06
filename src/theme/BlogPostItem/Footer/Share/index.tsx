@@ -51,12 +51,12 @@ export default function ShareWidget(): ReactNode {
                 <WhatsappShareButton url={window.location.href} className="p-1">
                     <WhatsappIcon size={shareIconSize} round></WhatsappIcon>
                 </WhatsappShareButton>
-                <EmailShareButton url={window.location.href} className="p-1">
-                    <EmailIcon size={shareIconSize} round></EmailIcon>
-                </EmailShareButton>
                 <BiliBiliShareButton url={window.location.href} className="p-1">
                     <BiliBiliIcon size={shareIconSize} round/>
                 </BiliBiliShareButton>
+                <EmailShareButton url={window.location.href} className="p-1">
+                    <EmailIcon size={shareIconSize} round></EmailIcon>
+                </EmailShareButton>
             </div>
         </div>
     );

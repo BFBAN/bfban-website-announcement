@@ -118,7 +118,8 @@ const config: Config = {
                 remarkPlugins: [
                     [remarkGFM, {singleTilde: false}],
                     require('remark-breaks'),
-                ]
+                ],
+                editUrl: 'https://github.com/BFBAN/bfban-website-announcement/edit/main/',
             } satisfies BlogPluginOptions
         ],
         [
@@ -143,7 +144,9 @@ const config: Config = {
                 remarkPlugins: [
                     [remarkGFM, {singleTilde: false}],
                     require('remark-breaks'),
-                ]
+                ],
+                editUrl: 'https://github.com/BFBAN/bfban-website-announcement/edit/main/',
+
             } satisfies BlogPluginOptions,
         ],
         [
