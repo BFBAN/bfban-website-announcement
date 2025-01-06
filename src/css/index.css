@@ -221,7 +221,6 @@ nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
 .footnotes {
     margin: 0 -25px -25px -25px;
     padding: 20px 25px 0 25px;
-    border-top: 1px solid var(--ifm-toc-border-color);
 }
 
 .footnotes p {

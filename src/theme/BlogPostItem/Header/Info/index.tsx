@@ -7,6 +7,8 @@ import {useBlogPost} from '@docusaurus/plugin-content-blog/client';
 import type {Props} from '@theme/BlogPostItem/Header/Info';
 
 import styles from './styles.module.css';
+import Link from "@docusaurus/Link";
+import {Input} from "tinacms";
 
 // Very simple pluralization: probably good enough for now
 function useReadingTimePlural() {
@@ -48,8 +50,8 @@ function Spacer() {
 }
 
 export default function BlogPostItemHeaderInfo({className}: Props): ReactNode {
-    const {metadata} = useBlogPost();
-    const {date, lastUpdatedAt, description, readingTime} = metadata;
+    const {metadata, isBlogPostPage} = useBlogPost();
+    const {date, readingTime, frontMatter, permalink} = metadata;
 
     const dateTimeFormat = useDateTimeFormat({
         day: 'numeric',
@@ -70,6 +72,15 @@ export default function BlogPostItemHeaderInfo({className}: Props): ReactNode {
                     <Spacer/>
                     <i className="bi bi-book"></i>
                     <ReadingTime readingTime={readingTime}/>
+                </>
+            )}
+            {typeof frontMatter['shortLink'] !== 'undefined' && isBlogPostPage && (
+                <>
+                    <Spacer/>
+                    <i className="bi bi-link"></i>
+                    <Link to={frontMatter['shortLink'] as string} className="text-truncate">
+                        {frontMatter['shortLink'] as string}
+                    </Link>
                 </>
             )}
         </div>
