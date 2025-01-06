@@ -1,6 +1,6 @@
 ---
-slug: sophistry
-title: 2023-2024年 作弊玩家诡辩圣经
+slug: sophistry-2022-2023
+title: 2022-2023年 作弊玩家诡辩圣经
 date: 2023-10-15
 authors: [ Carbon235AALoliS , Yueye ]
 ---

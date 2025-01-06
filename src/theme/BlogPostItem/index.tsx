@@ -14,11 +14,13 @@ function useContainerClassName() {
 }
 
 export default function BlogPostItem({children, className}: Props): ReactNode {
+    const {isBlogPostPage} = useBlogPost();
     const containerClassName = useContainerClassName();
+
     return (
         <div className="mb-4">
             <BlogPostItemContainer
-                className={clsx("card h-100 overflow-hidden rounded-2 " + containerClassName, className + " p-4")}>
+                className={clsx("card h-100 overflow-hidden rounded-2 " + containerClassName, className + ` ${isBlogPostPage ? 'p-sm-4 p-lg-5 p-4' : 'p-4'}`)}>
                 <BlogPostItemHeader/>
                 <BlogPostItemContent>{children}</BlogPostItemContent>
                 <BlogPostItemFooter/>
