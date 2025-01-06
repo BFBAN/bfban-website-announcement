@@ -1,7 +1,7 @@
 ---
 slug: 2024/01/16/appeal-guidelines
 title: 申诉指南
-date: 2024-01-16 15:17
+date: 2025-01-01
 authors: [ htaccessCN ]
 tags: [ guide ]
 ---
@@ -91,3 +91,4 @@ tags: [ guide ]
 **相关文档**
 
 - (原文) [BFBAN申诉指南](https://docs.qq.com/doc/DVklNT2xYblV3ZnFC?dver=) 网址
+- (图片) [BFBAN申诉指南-中文](/file/BFBAN_appeal_guide-BFBANonly.zh.png) PNG
