@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {useBlogPost, useBlogPostStructuredData} from "@docusaurus/plugin-content-blog/client";
-import {useDismissible} from "tinacms";
 
 export default function ReadAloudWidget({children}) {
     const synth = window.speechSynthesis;
@@ -88,7 +86,7 @@ export default function ReadAloudWidget({children}) {
                 }
             }
             utterThis.pitch = 1;
-            utterThis.onend = ()=> {
+            utterThis.onend = () => {
                 setReadAloudStatus(false);
             }
             synth.speak(utterThis);
@@ -112,7 +110,7 @@ export default function ReadAloudWidget({children}) {
 
     return (
         <span className="print-hidden">
-            {children}
+                    {children}
             <i className="bi bi-volume-up"></i>
             {/*<select className="form-text" onChange={onChangeReadAloudIndex} style={{width: '40px'}}>*/}
             {/*    {readAloud.map(i => (*/}

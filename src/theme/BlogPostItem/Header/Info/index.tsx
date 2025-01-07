@@ -12,6 +12,7 @@ import {useReactToPrint} from 'react-to-print';
 
 import BlogPostItem from "../../index"
 import ReadAloudWidget from "@site/src/components/_SpeechSynthesis";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 // Very simple pluralization: probably good enough for now
 function useReadingTimePlural() {
@@ -108,9 +109,13 @@ export default function BlogPostItemHeaderInfo({printRef, className}: { printRef
                 </>
             )}
             {isBlogPostPage && (
-                <ReadAloudWidget>
-                    <Spacer/>
-                </ReadAloudWidget>
+                <BrowserOnly>
+                    {() => (
+                        <ReadAloudWidget>
+                            <Spacer/>
+                        </ReadAloudWidget>
+                    )}
+                </BrowserOnly>
             )}
         </div>
     );
