@@ -1,7 +1,7 @@
 ---
 slug: sophistry-2024
 title: 2024年 作弊玩家诡辩圣经(节选)
-date: 2023-10-15
+date: 2025-01-08
 authors: [ jianXia , SuperWaterGod ]
 ---
 
@@ -10,7 +10,7 @@ authors: [ jianXia , SuperWaterGod ]
 
 1. 我绝对没开挂
 2. 我有个朋友
-3. 是我的表3弟
+3. 是我的表弟
 4. 打不过就加入
 5. 我可以不开但不能没有
 6. 我买的号
@@ -61,4 +61,3 @@ authors: [ jianXia , SuperWaterGod ]
 51. 坐过牢出来就不是人了?
 52. 体验也有罪?
 53. 你们都站在道德制高点上了
-

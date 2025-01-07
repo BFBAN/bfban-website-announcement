@@ -199,6 +199,10 @@ nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
     margin-left: calc(-50px) !important;
 }
 
+.markdown {
+    margin-bottom: 1.5rem;
+}
+
 .markdown ul > p,
 .markdown li > p,
 .markdown blockquote > p {
