@@ -76,3 +76,11 @@ htaccessCN:
   socials:
     website: https://bfban.com/link
     bfban: https://bfban.com/space/20439
+
+jianXia:
+  name: Jian Xia
+  image_url: /img/authors/jianXia.png
+  title: JianXia
+  page: true
+  socials:
+    bfban: https://bfban.com/space/33284
