@@ -1,166 +1,126 @@
 {
   "theme.ErrorPageContent.title": {
-    "message": "The page has crashed.",
-    "description": "The title of the fallback page when the page crashed"
+    "message": "The page has crashed."
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Back to top",
-    "description": "The ARIA label for the back to top button"
+    "message": "Back to top"
   },
   "theme.blog.archive.title": {
-    "message": "Historical blog posts",
-    "description": "The page & hero title of the blog archive page"
+    "message": "Historical blog posts"
   },
   "theme.blog.archive.description": {
-    "message": "Historical blog posts",
-    "description": "The page & hero description of the blog archive page"
+    "message": "Historical blog posts"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog post list page navigation",
-    "description": "The ARIA label for the blog pagination"
+    "message": "Blog post list page navigation"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Newer blog posts",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
+    "message": "Newer blog posts"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Older blog posts",
-    "description": "The label used to navigate to the older blog posts page (next page)"
+    "message": "Older blog posts"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog page navigation",
-    "description": "The ARIA label for the blog posts pagination"
+    "message": "Blog page navigation"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Article",
-    "description": "The blog post button label to navigate to the newer/previous post"
+    "message": "Newer Article"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Older article",
-    "description": "The blog post button label to navigate to the older/next post"
+    "message": "Older article"
   },
   "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
-    "description": "The label of the link targeting the tag list page"
+    "message": "View All Tags"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Toggle light/dark mode (currently {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "message": "Toggle light/dark mode (currently {mode})"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "Dark Mode",
-    "description": "The name for the dark color mode"
+    "message": "Dark Mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "Light Mode",
-    "description": "The name for the light color mode"
+    "message": "Light Mode"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Page Path",
-    "description": "The ARIA label for the breadcrumbs"
+    "message": "Page Path"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} items",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
+    "message": "{count} items"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "File tab",
-    "description": "The ARIA label for the docs pagination"
+    "message": "File tab"
   },
   "theme.docs.paginator.previous": {
-    "message": "Previous page",
-    "description": "The label used to navigate to the previous doc"
+    "message": "Previous page"
   },
   "theme.docs.paginator.next": {
-    "message": "Next Page",
-    "description": "The label used to navigate to the next doc"
+    "message": "Next Page"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} documents with tag",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr /cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{count} documents with tag"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged}「{tagName}」",
-    "description": "The title of the page for a docs tag"
+    "message": "{nDocsTagged}「{tagName}」"
   },
   "theme.docs.versionBadge.label": {
     "message": "Version: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is version {siteTitle} of {versionLabel} of the unreleased document.",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+    "message": "This is version {siteTitle} of {versionLabel} of the unreleased document."
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is the {siteTitle} {versionLabel} version of the document and is no longer actively maintained.",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+    "message": "This is the {siteTitle} {versionLabel} version of the document and is no longer actively maintained."
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For the latest documentation, see {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
+    "message": "For the latest documentation, see {latestVersionLink} ({versionLabel})."
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "Latest version",
-    "description": "The label used for the latest version suggestion link label"
+    "message": "Latest version"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to {heading}",
-    "description": "Title for link to heading"
+    "message": "Direct link to {heading}"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
-    "description": "The link label to edit the current page"
+    "message": "Edit this page"
   },
   "theme.lastUpdated.atDate": {
-    "message": "In {date}",
-    "description": "The words used to describe on which date a page has been last updated"
+    "message": "In {date}"
   },
   "theme.lastUpdated.byUser": {
-    "message": "By {user}",
-    "description": "The words used to describe by who the page has been last updated"
+    "message": "By {user}"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Finally {byUser}{atDate} updates",
-    "description": "The sentence used to display when a page has been last updated, and by who"
+    "message": "Finally {byUser}{atDate} updates"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Select version",
-    "description": "The label for the navbar versions dropdown on mobile view"
+    "message": "Select version"
   },
   "theme.NotFound.title": {
-    "message": "Page Not Found",
-    "description": "The title of the 404 page"
+    "message": "Page Not Found"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "closure",
-    "description": "The ARIA label for close button of announcement bar"
+    "message": "closure"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Label:",
-    "description": "The label alongside a tag list"
+    "message": "Label:"
   },
   "theme.admonition.caution": {
-    "message": "warn",
-    "description": "The default label used for the Caution admonition (:::caution)"
+    "message": "warn"
   },
   "theme.admonition.danger": {
-    "message": "Danger",
-    "description": "The default label used for the Danger admonition (:::danger)"
+    "message": "Danger"
   },
   "theme.admonition.info": {
-    "message": "information",
-    "description": "The default label used for the Info admonition (:::info)"
+    "message": "information"
   },
   "theme.admonition.note": {
-    "message": "Remark",
-    "description": "The default label used for the Note admonition (:::note)"
+    "message": "Remark"
   },
   "theme.admonition.tip": {
-    "message": "hint",
-    "description": "The default label used for the Tip admonition (:::tip)"
+    "message": "hint"
   },
   "theme.admonition.warning": {
-    "message": "Notice",
-    "description": "The default label used for the Warning admonition (:::warning)"
+    "message": "Notice"
   },
   "theme.blog.sidebar.navAriaLabel": {
     "message": "Recent blog navigation"
@@ -193,7 +153,8 @@
     "message": "Overview of this page"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} minutes to read"
+    "message": "{readingTime} minutes to read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr /cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.sidebar.navAriaLabel": {
     "message": "Documentation Sidebar"
@@ -244,44 +205,34 @@
     "message": "{authorName} - {nPosts}"
   },
   "theme.blog.authorsList.pageTitle": {
-    "message": "Authors",
-    "description": "The title of the authors page"
+    "message": "author"
   },
   "theme.blog.authorsList.viewAll": {
-    "message": "View All Authors",
-    "description": "The label of the link targeting the blog authors page"
+    "message": "View all authors"
   },
   "theme.blog.author.noPosts": {
-    "message": "This author has not written any posts yet.",
-    "description": "The text for authors with 0 blog posts"
+    "message": "This author has not written any posts yet"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "Unlisted Pages",
-    "description": "The unlisted content banner title"
+    "message": "Unlisted Pages"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "This page is unlisted. It is not indexed by search engines and is only accessible to users with a direct link.",
-    "description": "The unlisted content banner message"
+    "message": "This page is unlisted. It is not indexed by search engines and is only accessible to users with a direct link."
   },
   "theme.contentVisibility.draftBanner.title": {
-    "message": "Draft page",
-    "description": "The draft content banner title"
+    "message": "Draft Page"
   },
   "theme.contentVisibility.draftBanner.message": {
-    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
-    "description": "The draft content banner message"
+    "message": "This page is a draft. It will only be visible during development and will be excluded from production builds."
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Retry",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+    "message": "Retry"
   },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+    "message": "Skip to main content"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Label",
-    "description": "The title of the tag list page"
+    "message": "Label"
   },
   "precepts.title": {
     "message": "Anti-Cheating Rules"
@@ -435,5 +386,8 @@
   },
   "theme.SearchModal.placeholder": {
     "message": "Search Documents"
+  },
+  "print": {
+    "message": "Print"
   }
 }
