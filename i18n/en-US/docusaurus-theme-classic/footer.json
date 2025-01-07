@@ -3,16 +3,19 @@
     "message": "connect"
   },
   "link.item.label.link": {
-    "message": "Friends Links"
+    "message": "Friends Links",
+    "description": "The label of footer link with label=link linking to https://bfban.com/link"
   },
   "link.item.label.community": {
     "message": "Community"
   },
   "link.item.label.about": {
-    "message": "about"
+    "message": "about",
+    "description": "The label of footer link with label=about linking to https://bfban.com/about"
   },
   "link.item.label.contactUs": {
-    "message": "Contact Us"
+    "message": "Contact Us",
+    "description": "The label of footer link with label=contactUs linking to mailto:services@bfban.com"
   },
   "link.item.label.other": {
     "message": "other"
