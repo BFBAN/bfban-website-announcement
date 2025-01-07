@@ -1,166 +1,126 @@
 {
   "theme.ErrorPageContent.title": {
-    "message": "ページがクラッシュしました。",
-    "description": "ページがクラッシュしたときのフォールバック ページのタイトル"
+    "message": "ページがクラッシュしました。"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "トップに戻る",
-    "description": "「トップに戻る」ボタンの ARIA ラベル"
+    "message": "トップに戻る"
   },
   "theme.blog.archive.title": {
-    "message": "歴史ブログ",
-    "description": "ブログアーカイブページのページとヒーロータイトル"
+    "message": "歴史ブログ"
   },
   "theme.blog.archive.description": {
-    "message": "歴史ブログ",
-    "description": "ブログアーカイブページのページ＆ヒーロー説明"
+    "message": "歴史ブログ"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "ブログ投稿リストのページネーション ナビゲーション",
-    "description": "ブログのページネーションの ARIA ラベル"
+    "message": "ブログ投稿リストのページネーション ナビゲーション"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "新しいブログ投稿",
-    "description": "新しいブログ投稿ページ (前のページ) に移動するために使用されるラベル"
+    "message": "新しいブログ投稿"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "古いブログ投稿",
-    "description": "古いブログ投稿ページ (次のページ) に移動するために使用されるラベル"
+    "message": "古いブログ投稿"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "ブログページのナビゲーション",
-    "description": "ブログ投稿のページネーションの ARIA ラベル"
+    "message": "ブログページのナビゲーション"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "新しい記事",
-    "description": "新しい/前の投稿に移動するためのブログ投稿ボタンのラベル"
+    "message": "新しい記事"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "古い記事",
-    "description": "古い/次の投稿に移動するためのブログ投稿ボタンのラベル"
+    "message": "古い記事"
   },
   "theme.tags.tagsPageLink": {
-    "message": "すべてのタグを表示",
-    "description": "タグ一覧ページを対象としたリンクのラベル"
+    "message": "すべてのタグを表示"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "ライト/ダーク モードの切り替え (現在は {mode})",
-    "description": "ナビゲーションバーのカラーモード切り替えの ARIA ラベル"
+    "message": "ライト/ダーク モードの切り替え (現在は {mode})"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "ダークモード",
-    "description": "ダークカラーモードの名前"
+    "message": "ダークモード"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "ライトモード",
-    "description": "ライトカラーモードの名前"
+    "message": "ライトモード"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "ページパス",
-    "description": "パンくずリストの ARIA ラベル"
+    "message": "ページパス"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} アイテム",
-    "description": "このカテゴリに含まれるアイテムの数に関する、生成されたインデックス内のカテゴリ カードのデフォルトの説明"
+    "message": "{count} アイテム"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "「ファイル」タブ",
-    "description": "ドキュメントのページネーションの ARIA ラベル"
+    "message": "「ファイル」タブ"
   },
   "theme.docs.paginator.previous": {
-    "message": "前のページへ",
-    "description": "前のドキュメントに移動するために使用されるラベル"
+    "message": "前のページへ"
   },
   "theme.docs.paginator.next": {
-    "message": "次のページ",
-    "description": "次のドキュメントに移動するために使用されるラベル"
+    "message": "次のページ"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} タグ付きドキュメント",
-    "description": "「{count} タグ付きドキュメント」の複数形ラベル。言語サポートと同じだけ複数形 (「|」で区切る) を使用します (https://www.unicode.org/cldr を参照)。 /cldr-aux/charts/34/supplemental/ language_plural_rules.html)"
+    "message": "{count} タグ付きドキュメント"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged}「{tagName}」",
-    "description": "docs タグのページのタイトル"
+    "message": "{nDocsTagged}「{tagName}」"
   },
   "theme.docs.versionBadge.label": {
     "message": "バージョン: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "これは、バージョン {siteTitle} {versionLabel} の未リリースのドキュメントです。",
-    "description": "未リリースのドキュメント バージョンを閲覧していることをユーザーに伝えるために使用されるラベル"
+    "message": "これは、バージョン {siteTitle} {versionLabel} の未リリースのドキュメントです。"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "このドキュメントはバージョン {siteTitle} {versionLabel} 用であり、現在はアクティブにメンテナンスされていません。",
-    "description": "メンテナンスされていないドキュメント バージョンを閲覧していることをユーザーに伝えるために使用されるラベル"
+    "message": "このドキュメントはバージョン {siteTitle} {versionLabel} 用であり、現在はアクティブにメンテナンスされていません。"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "最新のドキュメントについては、{latestVersionLink} ({versionLabel}) を参照してください。",
-    "description": "ユーザーに最新バージョンを確認するように指示するために使用されるラベル"
+    "message": "最新のドキュメントについては、{latestVersionLink} ({versionLabel}) を参照してください。"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "最新バージョン",
-    "description": "最新バージョンの提案リンク ラベルに使用されるラベル"
+    "message": "最新バージョン"
   },
   "theme.common.headingLinkTitle": {
-    "message": "{heading} への直接リンク",
-    "description": "見出しへのリンクのタイトル"
+    "message": "{heading} への直接リンク"
   },
   "theme.common.editThisPage": {
-    "message": "このページを編集する",
-    "description": "現在のページを編集するためのリンク ラベル"
+    "message": "このページを編集する"
   },
   "theme.lastUpdated.atDate": {
-    "message": "{date} で",
-    "description": "ページが最後に更新された日付を表すために使用される単語"
+    "message": "{date} で"
   },
   "theme.lastUpdated.byUser": {
-    "message": "{user} による",
-    "description": "ページの最終更新者を説明するために使用される言葉"
+    "message": "{user} による"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "最終 {byUser}{atDate} が更新されました",
-    "description": "ページが最後にいつ更新されたか、誰によって更新されたかを表示するために使用される文"
+    "message": "最終 {byUser}{atDate} が更新されました"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "バージョンの選択",
-    "description": "モバイルビューのナビゲーションバーバージョンドロップダウンのラベル"
+    "message": "バージョンの選択"
   },
   "theme.NotFound.title": {
-    "message": "ページが見つかりません",
-    "description": "404ページのタイトル"
+    "message": "ページが見つかりません"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "閉鎖",
-    "description": "アナウンス バーの閉じるボタンの ARIA ラベル"
+    "message": "閉鎖"
   },
   "theme.tags.tagsListLabel": {
-    "message": "ラベル：",
-    "description": "タグリストの横にあるラベル"
+    "message": "ラベル："
   },
   "theme.admonition.caution": {
-    "message": "警告する",
-    "description": "注意警告に使用されるデフォルトのラベル (:::caution)"
+    "message": "警告する"
   },
   "theme.admonition.danger": {
-    "message": "危険",
-    "description": "危険警告に使用されるデフォルトのラベル (:::danger)"
+    "message": "危険"
   },
   "theme.admonition.info": {
-    "message": "情報",
-    "description": "情報通知に使用されるデフォルトのラベル (:::info)"
+    "message": "情報"
   },
   "theme.admonition.note": {
-    "message": "述べる",
-    "description": "注警告に使用されるデフォルトのラベル (:::note)"
+    "message": "述べる"
   },
   "theme.admonition.tip": {
-    "message": "ヒント",
-    "description": "チップ警告に使用されるデフォルトのラベル (:::tip)"
+    "message": "ヒント"
   },
   "theme.admonition.warning": {
-    "message": "知らせ",
-    "description": "警告警告に使用されるデフォルトのラベル (:::warning)"
+    "message": "知らせ"
   },
   "theme.blog.sidebar.navAriaLabel": {
     "message": "最近のブログ投稿のナビゲーション"
@@ -193,7 +153,8 @@
     "message": "このページの概要"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "読むのに {readingTime} 分かかります"
+    "message": "読むのに {readingTime} 分かかります",
+    "description": "「{readingTime} min read」の複数形ラベル。言語サポートと同じだけ複数形 (「|」で区切る) を使用します (https://www.unicode.org/cldr を参照)。 /cldr-aux/charts/34/supplemental/ language_plural_rules.html)"
   },
   "theme.docs.sidebar.navAriaLabel": {
     "message": "ドキュメントサイドバー"
@@ -244,44 +205,34 @@
     "message": "{authorName} - {nPosts}"
   },
   "theme.blog.authorsList.pageTitle": {
-    "message": "著者",
-    "description": "著者ページのタイトル"
+    "message": "著者"
   },
   "theme.blog.authorsList.viewAll": {
-    "message": "すべての著者を表示",
-    "description": "ブログ著者ページをターゲットとするリンクのラベル"
+    "message": "すべての著者を表示"
   },
   "theme.blog.author.noPosts": {
-    "message": "この著者はまだ投稿を書いていません。",
-    "description": "ブログ投稿数が 0 件の著者のテキスト"
+    "message": "この著者はまだ投稿を書いていません"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "ページがリストされていません",
-    "description": "非公開コンテンツのバナータイトル"
+    "message": "ページがリストされていません"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "このページは掲載されていません。検索エンジンによってインデックスは作成されず、直接リンクを持つユーザーのみがアクセスできます。",
-    "description": "非公開コンテンツのバナーメッセージ"
+    "message": "このページは掲載されていません。検索エンジンによってインデックスは作成されず、直接リンクを持つユーザーのみがアクセスできます。"
   },
   "theme.contentVisibility.draftBanner.title": {
-    "message": "ドラフトページ",
-    "description": "ドラフトコンテンツのバナータイトル"
+    "message": "ドラフトページ"
   },
   "theme.contentVisibility.draftBanner.message": {
-    "message": "このページはドラフトであり、開発環境でのみ表示され、実稼働ビルドからは除外されます。",
-    "description": "ドラフトコンテンツのバナーメッセージ"
+    "message": "このページは草案です。開発環境でのみ表示され、実稼働ビルドからは除外されます。"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "もう一度やり直してください",
-    "description": "React エラー境界がエラーをキャプチャしたときにレンダリングを再試行するボタンのラベル"
+    "message": "もう一度やり直してください"
   },
   "theme.common.skipToMainContent": {
-    "message": "メインコンテンツにスキップ",
-    "description": "アクセシビリティに使用されるコンテンツへのスキップラベル。キーボードのタブ/入力ナビゲーションでメインコンテンツに素早く移動できます。"
+    "message": "メインコンテンツにスキップ"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "ラベル",
-    "description": "タグ一覧ページのタイトル"
+    "message": "ラベル"
   },
   "precepts.title": {
     "message": "不正行為防止ルール"
@@ -435,5 +386,8 @@
   },
   "theme.SearchModal.placeholder": {
     "message": "文書の検索"
+  },
+  "print": {
+    "message": "印刷する"
   }
 }
