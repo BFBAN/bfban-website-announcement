@@ -1,166 +1,126 @@
 {
   "theme.ErrorPageContent.title": {
-    "message": "页面已崩溃。",
-    "description": "The title of the fallback page when the page crashed"
+    "message": "页面已崩溃。"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "回到顶部",
-    "description": "The ARIA label for the back to top button"
+    "message": "回到顶部"
   },
   "theme.blog.archive.title": {
-    "message": "历史博文",
-    "description": "The page & hero title of the blog archive page"
+    "message": "历史博文"
   },
   "theme.blog.archive.description": {
-    "message": "历史博文",
-    "description": "The page & hero description of the blog archive page"
+    "message": "历史博文"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "博文列表分页导航",
-    "description": "The ARIA label for the blog pagination"
+    "message": "博文列表分页导航"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "较新的博文",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
+    "message": "较新的博文"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "较旧的博文",
-    "description": "The label used to navigate to the older blog posts page (next page)"
+    "message": "较旧的博文"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "博文分页导航",
-    "description": "The ARIA label for the blog posts pagination"
+    "message": "博文分页导航"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "较新一篇",
-    "description": "The blog post button label to navigate to the newer/previous post"
+    "message": "较新一篇"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "较旧一篇",
-    "description": "The blog post button label to navigate to the older/next post"
+    "message": "较旧一篇"
   },
   "theme.tags.tagsPageLink": {
-    "message": "查看所有标签",
-    "description": "The label of the link targeting the tag list page"
+    "message": "查看所有标签"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "切换浅色/暗黑模式（当前为{mode}）",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "message": "切换浅色/暗黑模式（当前为{mode}）"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "暗黑模式",
-    "description": "The name for the dark color mode"
+    "message": "暗黑模式"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "浅色模式",
-    "description": "The name for the light color mode"
+    "message": "浅色模式"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "页面路径",
-    "description": "The ARIA label for the breadcrumbs"
+    "message": "页面路径"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} 个项目",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
+    "message": "{count} 个项目"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "文件选项卡",
-    "description": "The ARIA label for the docs pagination"
+    "message": "文件选项卡"
   },
   "theme.docs.paginator.previous": {
-    "message": "上一页",
-    "description": "The label used to navigate to the previous doc"
+    "message": "上一页"
   },
   "theme.docs.paginator.next": {
-    "message": "下一页",
-    "description": "The label used to navigate to the next doc"
+    "message": "下一页"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} 篇文档带有标签",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{count} 篇文档带有标签"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged}「{tagName}」",
-    "description": "The title of the page for a docs tag"
+    "message": "{nDocsTagged}「{tagName}」"
   },
   "theme.docs.versionBadge.label": {
     "message": "版本：{versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "此为 {siteTitle} {versionLabel} 版尚未发行的文档。",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+    "message": "此为 {siteTitle} {versionLabel} 版尚未发行的文档。"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "此为 {siteTitle} {versionLabel} 版的文档，现已不再积极维护。",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+    "message": "此为 {siteTitle} {versionLabel} 版的文档，现已不再积极维护。"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "最新的文档请参阅 {latestVersionLink} ({versionLabel})。",
-    "description": "The label used to tell the user to check the latest version"
+    "message": "最新的文档请参阅 {latestVersionLink} ({versionLabel})。"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "最新版本",
-    "description": "The label used for the latest version suggestion link label"
+    "message": "最新版本"
   },
   "theme.common.headingLinkTitle": {
-    "message": "{heading}的直接链接",
-    "description": "Title for link to heading"
+    "message": "{heading}的直接链接"
   },
   "theme.common.editThisPage": {
-    "message": "编辑此页",
-    "description": "The link label to edit the current page"
+    "message": "编辑此页"
   },
   "theme.lastUpdated.atDate": {
-    "message": "于 {date} ",
-    "description": "The words used to describe on which date a page has been last updated"
+    "message": "于 {date} "
   },
   "theme.lastUpdated.byUser": {
-    "message": "由 {user} ",
-    "description": "The words used to describe by who the page has been last updated"
+    "message": "由 {user} "
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "最后{byUser}{atDate}更新",
-    "description": "The sentence used to display when a page has been last updated, and by who"
+    "message": "最后{byUser}{atDate}更新"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "选择版本",
-    "description": "The label for the navbar versions dropdown on mobile view"
+    "message": "选择版本"
   },
   "theme.NotFound.title": {
-    "message": "找不到页面",
-    "description": "The title of the 404 page"
+    "message": "找不到页面"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "关闭",
-    "description": "The ARIA label for close button of announcement bar"
+    "message": "关闭"
   },
   "theme.tags.tagsListLabel": {
-    "message": "标签：",
-    "description": "The label alongside a tag list"
+    "message": "标签："
   },
   "theme.admonition.caution": {
-    "message": "警告",
-    "description": "The default label used for the Caution admonition (:::caution)"
+    "message": "警告"
   },
   "theme.admonition.danger": {
-    "message": "危险",
-    "description": "The default label used for the Danger admonition (:::danger)"
+    "message": "危险"
   },
   "theme.admonition.info": {
-    "message": "信息",
-    "description": "The default label used for the Info admonition (:::info)"
+    "message": "信息"
   },
   "theme.admonition.note": {
-    "message": "备注",
-    "description": "The default label used for the Note admonition (:::note)"
+    "message": "备注"
   },
   "theme.admonition.tip": {
-    "message": "提示",
-    "description": "The default label used for the Tip admonition (:::tip)"
+    "message": "提示"
   },
   "theme.admonition.warning": {
-    "message": "注意",
-    "description": "The default label used for the Warning admonition (:::warning)"
+    "message": "注意"
   },
   "theme.blog.sidebar.navAriaLabel": {
     "message": "最近博文导航"
@@ -193,7 +153,8 @@
     "message": "本页总览"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "阅读需 {readingTime} 分钟"
+    "message": "阅读需 {readingTime} 分钟",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.sidebar.navAriaLabel": {
     "message": "文档侧边栏"
@@ -223,10 +184,10 @@
     "message": "关闭导航栏"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "展开侧边栏"
+    "message": "展开侧边栏",
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "展开侧边栏"
+    "message": "展开侧边栏",
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
     "message": "← 回到主菜单"
@@ -244,44 +205,34 @@
     "message": "{authorName} - {nPosts}"
   },
   "theme.blog.authorsList.pageTitle": {
-    "message": "Authors",
-    "description": "The title of the authors page"
+    "message": "作者"
   },
   "theme.blog.authorsList.viewAll": {
-    "message": "View All Authors",
-    "description": "The label of the link targeting the blog authors page"
+    "message": "查看所有作者"
   },
   "theme.blog.author.noPosts": {
-    "message": "This author has not written any posts yet.",
-    "description": "The text for authors with 0 blog post"
+    "message": "这个作者还没有写任何帖子"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "未列出页",
-    "description": "The unlisted content banner title"
+    "message": "未列出页"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "此页面未列出。搜索引擎不会对其索引，只有拥有直接链接的用户才能访问。",
-    "description": "The unlisted content banner message"
+    "message": "此页面未列出。搜索引擎不会对其索引，只有拥有直接链接的用户才能访问。"
   },
   "theme.contentVisibility.draftBanner.title": {
-    "message": "Draft page",
-    "description": "The draft content banner title"
+    "message": "草案页面"
   },
   "theme.contentVisibility.draftBanner.message": {
-    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
-    "description": "The draft content banner message"
+    "message": "这一页是草稿。它将只在开发中可见，并排除在生产构建中"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "重试",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+    "message": "重试"
   },
   "theme.common.skipToMainContent": {
-    "message": "跳到主要内容",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+    "message": "跳到主要内容"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "标签",
-    "description": "The title of the tag list page"
+    "message": "标签"
   },
   "precepts.title": {
     "message": "反作弊规则"
@@ -435,5 +386,8 @@
   },
   "theme.SearchModal.placeholder": {
     "message": "搜索文档"
+  },
+  "print": {
+    "message": "打印"
   }
 }

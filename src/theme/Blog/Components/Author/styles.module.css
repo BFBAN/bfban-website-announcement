@@ -7,6 +7,8 @@
 
 .authorImage {
   --ifm-avatar-photo-size: 3.6rem;
+  min-height: var(--ifm-avatar-photo-size);
+  min-width: var(--ifm-avatar-photo-size);
 }
 
 .author-as-h1 .authorImage {

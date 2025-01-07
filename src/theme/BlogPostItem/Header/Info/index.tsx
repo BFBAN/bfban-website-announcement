@@ -67,7 +67,7 @@ export default function BlogPostItemHeaderInfo({printRef, className}: { printRef
 
     const reactToPrintFn = useReactToPrint({
         contentRef: printRef,
-        copyShadowRoots: false,
+        copyShadowRoots: true,
         preserveAfterPrint: true,
         documentTitle: title,
         bodyClass: "",
@@ -95,13 +95,17 @@ export default function BlogPostItemHeaderInfo({printRef, className}: { printRef
                     </Link>
                 </>
             )}
-            <span className="print-hidden">
-                <Spacer/>
-                <i className="bi bi-printer"></i>
-                <a href="javascript:void(0)" onClick={(_) => reactToPrintFn()}>
-                    <Translate id="print"></Translate>
-                </a>
-            </span>
+            {isBlogPostPage && (
+                <>
+                <span className="print-hidden">
+                    <Spacer/>
+                    <i className="bi bi-printer"></i>
+                    <a href="javascript:void(0)" onClick={(_) => reactToPrintFn()}>
+                        <Translate id="print"></Translate>
+                    </a>
+                </span>
+                </>
+            )}
         </div>
     );
 }

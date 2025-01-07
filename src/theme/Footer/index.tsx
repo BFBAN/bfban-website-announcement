@@ -10,7 +10,7 @@ function Footer(): ReactNode {
   if (!footer) {
     return null;
   }
-  const {copyright, links, logo, style} = footer;
+  const {links, logo, style} = footer;
 
   return (
     <FooterLayout
