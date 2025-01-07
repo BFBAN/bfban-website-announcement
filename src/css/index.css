@@ -247,3 +247,17 @@ nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
     line-height: 1;
     vertical-align: -.125em;
 }
+
+.print-hidden {
+    @media print {
+        display: none;
+    }
+}
+
+@media print {
+    .card {
+        border-radius: 0 !important;
+        border: none;
+        box-shadow: none !important;
+    }
+}

@@ -38,7 +38,7 @@ export default function BlogPostItemFooter(): ReactNode {
                 {tagsExists && (
                     <div
                         className={clsx(
-                            'row',
+                            'row print-hidden',
                             'mt-3',
                             ThemeClassNames.blog.blogFooterEditMetaRow,
                         )}>
@@ -51,6 +51,7 @@ export default function BlogPostItemFooter(): ReactNode {
                 {canDisplayEditMetaRow && (
                     <EditMetaRow
                         className={clsx(
+                            'print-hidden',
                             'margin-top--sm',
                             ThemeClassNames.blog.blogFooterEditMetaRow,
                         )}

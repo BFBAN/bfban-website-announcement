@@ -28,7 +28,7 @@ export default function ShareWidget(): ReactNode {
     return (
         <div
             className={clsx(
-                'row',
+                'row print-hidden',
                 'margin-top--sm',
                 ThemeClassNames.blog.blogFooterEditMetaRow,
             )}>
