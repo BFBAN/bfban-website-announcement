@@ -111,7 +111,7 @@ export default function ReadAloudWidget({children}) {
     }
 
     return (
-        <>
+        <span className="print-hidden">
             {children}
             <i className="bi bi-volume-up"></i>
             {/*<select className="form-text" onChange={onChangeReadAloudIndex} style={{width: '40px'}}>*/}
@@ -124,6 +124,6 @@ export default function ReadAloudWidget({children}) {
             <a onClick={(_) => onReadAloudStatus()}>
                 {!readAloudStatus ? <i className="bi bi-play-fill"></i> : <i className="bi bi-pause"></i>}
             </a>
-        </>
+        </span>
     )
 }
