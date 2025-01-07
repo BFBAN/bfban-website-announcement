@@ -3,16 +3,19 @@
     "message": "接続する"
   },
   "link.item.label.link": {
-    "message": "フレンドリーリンク"
+    "message": "フレンドリーリンク",
+    "description": "https://bfban.com/link にリンクする label=link を持つフッター リンクのラベル"
   },
   "link.item.label.community": {
     "message": "コミュニティ"
   },
   "link.item.label.about": {
-    "message": "について"
+    "message": "について",
+    "description": "https://bfban.com/about にリンクする label=about を含むフッター リンクのラベル"
   },
   "link.item.label.contactUs": {
-    "message": "お問い合わせ"
+    "message": "お問い合わせ",
+    "description": "label=contactUs が mailto:services@bfban.com にリンクするフッター リンクのラベル"
   },
   "link.item.label.other": {
     "message": "他の"
