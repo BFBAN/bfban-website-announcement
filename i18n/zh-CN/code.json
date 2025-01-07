@@ -184,10 +184,10 @@
     "message": "关闭导航栏"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "展开侧边栏",
+    "message": "展开侧边栏"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "展开侧边栏",
+    "message": "展开侧边栏"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
     "message": "← 回到主菜单"

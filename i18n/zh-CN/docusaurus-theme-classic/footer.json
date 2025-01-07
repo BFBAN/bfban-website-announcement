@@ -24,35 +24,27 @@
     "message": " "
   },
   "link.title.community": {
-    "message": "社区",
-    "description": "The title of the footer links column with title=community in the footer"
+    "message": "社区"
   },
   "link.title.connection": {
-    "message": "联系",
-    "description": "The title of the footer links column with title=connection in the footer"
+    "message": "联系"
   },
   "link.title.other": {
-    "message": "其他",
-    "description": "The title of the footer links column with title=other in the footer"
+    "message": "其他"
   },
   "link.item.label.Gametool discord": {
-    "message": "Gametool discord",
-    "description": "The label of footer link with label=Gametool discord linking to https://discord.gametools.network"
+    "message": "Gametool discord"
   },
   "link.item.label.BFBAN bfvrobot kook": {
-    "message": "BFBAN bfvrobot kook",
-    "description": "The label of footer link with label=BFBAN bfvrobot kook linking to https://kook.top/6Q0FHY"
+    "message": "BFBAN bfvrobot kook"
   },
   "link.item.label.github (website)": {
-    "message": "github (website)",
-    "description": "The label of footer link with label=github (website) linking to https://github.com/BFBAN/bfban-website"
+    "message": "github (website)"
   },
   "link.item.label.github (announcement)": {
-    "message": "github (announcement)",
-    "description": "The label of footer link with label=github (announcement) linking to https://github.com/BFBAN/bfban-website-announcement"
+    "message": "github (announcement)"
   },
   "link.item.label.QQ Group": {
-    "message": "QQ 群",
-    "description": "The label of footer link with label=QQ Group linking to https://jq.qq.com/?_wv=1027&k=FY8TCpCV"
+    "message": "QQ 群"
   }
 }
