@@ -7,7 +7,7 @@ authors: [ SuperWaterGod ]
 
 <iframe class="mb-2" src="//player.bilibili.com/player.html?isOutside=true&aid=113787189461584&bvid=BV1LirDY2Ee8&cid=27748861615&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500px"></iframe>
 
-> 统计了举报时间为UTC 2023年1月1日至2023年12月31日的所有案件
+> 统计了举报时间为UTC 2024年1月1日至2024年12月31日的所有案件
 > **在2024年BFBAN一共新增了44501件案件**
 > 相比2023年38978件，增长了14.2%
 
