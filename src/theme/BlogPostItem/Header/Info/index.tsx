@@ -11,6 +11,7 @@ import Link from "@docusaurus/Link";
 import {useReactToPrint} from 'react-to-print';
 
 import BlogPostItem from "../../index"
+import ReadAloudWidget from "@site/src/components/_SpeechSynthesis";
 
 // Very simple pluralization: probably good enough for now
 function useReadingTimePlural() {
@@ -100,11 +101,16 @@ export default function BlogPostItemHeaderInfo({printRef, className}: { printRef
                 <span className="print-hidden">
                     <Spacer/>
                     <i className="bi bi-printer"></i>
-                    <a href="javascript:void(0)" onClick={(_) => reactToPrintFn()}>
+                    <a href="#" onClick={(_) => reactToPrintFn()}>
                         <Translate id="print"></Translate>
                     </a>
                 </span>
                 </>
+            )}
+            {isBlogPostPage && (
+                <ReadAloudWidget>
+                    <Spacer/>
+                </ReadAloudWidget>
             )}
         </div>
     );

@@ -13,7 +13,6 @@ import SearchMetadata from '@theme/SearchMetadata';
 import type {Props} from '@theme/BlogListPage';
 import BlogPostItems from '../BlogPostItems';
 import BlogListPageStructuredData from '@theme/BlogListPage/StructuredData';
-import {FacebookIcon, FacebookShareButton, TwitterShareButton} from 'react-share';
 
 function BlogListPageMetadata(props: Props): ReactNode {
     const {metadata} = props;
