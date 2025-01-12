@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 export default function ReadAloudWidget({children}) {
-    const synth = window.speechSynthesis;
+    const synth = window.speechSynthesis || null;
 
     let voices = [],
         [inputTxt, setInputTxt] = useState("test"),
@@ -11,6 +11,9 @@ export default function ReadAloudWidget({children}) {
 
 
     useEffect(() => {
+        if (!synth)
+            return;
+
         if (synth.speaking) {
             synth.cancel();
         }
@@ -28,6 +31,9 @@ export default function ReadAloudWidget({children}) {
     }, [])
 
     function populateVoiceList() {
+        if (!synth)
+            return;
+
         voices = synth.getVoices().sort(function (a, b) {
             const aname = a.name.toUpperCase();
             const bname = b.name.toUpperCase();
@@ -62,6 +68,9 @@ export default function ReadAloudWidget({children}) {
 
 
     function speak() {
+        if (!synth)
+            return;
+
         if (synth.speaking) {
             console.error("speechSynthesis.speaking");
             return;
@@ -99,7 +108,9 @@ export default function ReadAloudWidget({children}) {
     }
 
     function onReadAloudStatus() {
-        console.log(readAloudStatus)
+        if (!synth)
+            return;
+
         if (!readAloudStatus) {
             speak()
         } else {
@@ -112,13 +123,6 @@ export default function ReadAloudWidget({children}) {
         <span className="print-hidden">
                     {children}
             <i className="bi bi-volume-up"></i>
-            {/*<select className="form-text" onChange={onChangeReadAloudIndex} style={{width: '40px'}}>*/}
-            {/*    {readAloud.map(i => (*/}
-            {/*        <option value={i.value} key={i.name}>*/}
-            {/*            {i.name}*/}
-            {/*        </option>*/}
-            {/*    ))}*/}
-            {/*</select>*/}
             <a onClick={(_) => onReadAloudStatus()}>
                 {!readAloudStatus ? <i className="bi bi-play-fill"></i> : <i className="bi bi-pause"></i>}
             </a>
