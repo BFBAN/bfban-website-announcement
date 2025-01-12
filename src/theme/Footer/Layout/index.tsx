@@ -19,7 +19,7 @@ export default function FooterLayout({
             })}>
             <div className=" container container-fluid">
                 <div className="row">
-                    <div className="col-3 col-lg-3 col-sm-12">
+                    <div className="col-12 col-lg-3 col-sm-12">
                         <p>
                             <a href='https://bfban.com'>
                                 <img height='40px' src='https://bfban.com/assets/img/friendly-web.16e0cc25.png'/>
@@ -31,10 +31,10 @@ export default function FooterLayout({
                             <Translate id="footer.build-description"></Translate>
                         </p>
                     </div>
-                    <div className="col-7 col-lg-7 col-sm-12">
+                    <div className="col-6 col-lg-7 col-sm-12">
                         {links}
                     </div>
-                    <div className="col-2 col-lg-2 col-sm-12">
+                    <div className="col-12 col-lg-2 col-sm-12">
                         <p>
                             <iframe src="https://status.bfban.com/badge"
                                     frameBorder={0}

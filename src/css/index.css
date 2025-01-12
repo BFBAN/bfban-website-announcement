@@ -46,6 +46,7 @@ footer.footer ul a:hover {
 }
 
 nav.sidebar_brwN ul a {
+    position: relative;
     font-size: inherit;
     margin-left: 10px;
     display: inline-flex !important;
@@ -53,21 +54,7 @@ nav.sidebar_brwN ul a {
     animation: 0.25s ease 0s 1 normal none running all;
 }
 
-nav.sidebar_brwN ul a:hover {
-    margin-left: 4px;
-    margin-top: -3px;
-    margin-bottom: -2px;
-    border: 1px solid rgba(from var(--ifm-color-primary) r g b / .5);
-    background: rgba(from var(--ifm-color-primary) r g b / .1);
-    padding: 1px 5px;
-    border-radius: 5px;
-}
-
-nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm {
-    position: relative;
-}
-
-nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
+nav.sidebar_brwN ul a:after {
     content: "";
     position: absolute;
     display: block;
@@ -77,8 +64,15 @@ nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
     border-radius: 10px;
     width: 3px;
     height: 100%;
-    background: var(--ifm-color-primary-dark);
     margin-left: -15px;
+}
+
+nav.sidebar_brwN ul a.sidebarItemLinkActive_oSRm:after {
+    background: var(--ifm-color-primary-dark);
+}
+
+nav.sidebar_brwN ul a:hover:after {
+    background: rgb(from var(--ifm-color-primary-dark) r g b / .5);
 }
 
 #__docusaurus > footer {

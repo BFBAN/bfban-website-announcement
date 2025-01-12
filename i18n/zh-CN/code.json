@@ -96,7 +96,7 @@
     "message": "选择版本"
   },
   "theme.NotFound.title": {
-    "message": "找不到页面"
+    "message": "哎列, 访问地址似乎走失"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "关闭"

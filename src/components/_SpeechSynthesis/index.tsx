@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 export default function ReadAloudWidget({children}) {
-    const synth = window.speechSynthesis || null;
+    const synth = window.speechSynthesis;
 
     let voices = [],
         [inputTxt, setInputTxt] = useState("test"),
@@ -9,10 +9,8 @@ export default function ReadAloudWidget({children}) {
         [readAloud, setReadAloud] = useState([]),
         [readAloudSelectIndex, setReadAloudSelectIndex] = useState<string>(null);
 
-
     useEffect(() => {
-        if (!synth)
-            return;
+        if (!synth) return;
 
         if (synth.speaking) {
             synth.cancel();
@@ -30,8 +28,14 @@ export default function ReadAloudWidget({children}) {
         }
     }, [])
 
+    function isSpeech () {
+        if ('speechSynthesis' in window)
+            return true
+        return false
+    }
+
     function populateVoiceList() {
-        if (!synth)
+        if (!isSpeech())
             return;
 
         voices = synth.getVoices().sort(function (a, b) {
@@ -66,10 +70,8 @@ export default function ReadAloudWidget({children}) {
         setReadAloud(readAloud)
     }
 
-
     function speak() {
-        if (!synth)
-            return;
+        if (!isSpeech()) return;
 
         if (synth.speaking) {
             console.error("speechSynthesis.speaking");
@@ -103,29 +105,24 @@ export default function ReadAloudWidget({children}) {
         }
     }
 
-    function onChangeReadAloudIndex(event) {
-        setReadAloudSelectIndex(event.target.value);
+    function stopSpeak () {
+        synth.cancel();
+        setReadAloudStatus(!readAloudStatus);
     }
 
     function onReadAloudStatus() {
-        if (!synth)
-            return;
+        if (!isSpeech()) return;
 
-        if (!readAloudStatus) {
-            speak()
-        } else {
-            synth.cancel();
-            setReadAloudStatus(!readAloudStatus);
-        }
+        !readAloudStatus ? speak() : stopSpeak();
     }
 
-    return (
+    return isSpeech() ? (
         <span className="print-hidden">
-                    {children}
+            {children}
             <i className="bi bi-volume-up"></i>
             <a onClick={(_) => onReadAloudStatus()}>
-                {!readAloudStatus ? <i className="bi bi-play-fill"></i> : <i className="bi bi-pause"></i>}
+                {!readAloudStatus ? <i className="bi bi-play-fill"></i> : <i className="bi bi-stop-fill text-danger"></i>}
             </a>
         </span>
-    )
+    ) : null;
 }
