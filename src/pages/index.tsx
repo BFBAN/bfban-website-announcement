@@ -115,7 +115,7 @@ export default function Home(): React.ReactElement {
                 {/*Main Row E*/}
 
                 <div className="container mb-5">
-                    <div className="row row-cols-3 align-items-stretch">
+                    <div className="row row-cols-2 align-items-stretch">
                         <div className="col-12 col-sm-12 col-lg-6 mb-3">
                             <div className="card">
                                 <div className="row g-0 h-100">
@@ -136,6 +136,33 @@ export default function Home(): React.ReactElement {
                                                 id="home.updata"></Translate></span>
                                             </p>
                                             <Translate id="privacy-policy.description"></Translate>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-sm-12 col-lg-6 mb-3">
+                            <div className="card">
+                                <div className="row g-0 h-100">
+                                    <div
+                                        className="col-3 align-content-center justify-items-center text-center"
+                                        style={{backgroundColor: 'var(--ifm-color-primary)'}}>
+                                        <i className="bi bi-people-fill fs-1 text-white"></i>
+                                    </div>
+                                    <div className="col-8">
+                                        <div className="card-body">
+                                            <Link href="/precepts/tags/user-policy" target="_self">
+                                                <h3 className="fs-2 text-body-emphasis">
+                                                    <Translate id="user-policy.title">用户守则</Translate>
+                                                </h3>
+                                            </Link>
+                                            <p>
+                                              <span className="badge rounded-pill text-bg-dark">
+                                                  v1
+                                              </span>
+                                            </p>
+                                            <Translate
+                                                id="user-policy.description">平台对于站内违规行为规定以及处罚评判</Translate>
                                         </div>
                                     </div>
                                 </div>

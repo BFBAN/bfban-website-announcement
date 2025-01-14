@@ -1,9 +1,13 @@
 import React from 'react';
 
 import TextColor from "@site/src/components/Color";
+import "./index.css"
 
-export default function Highlight({children, color}) {
+export default function Highlight({children}) {
     return (
-        <TextColor backgroundColor={color || 'rgba(248,230,171,0.38)'} color={color || 'auto'}>{children}</TextColor>
+        <span className="highlight">
+            <TextColor backgroundColor={'rgba(248,230,171,0.3)'}
+                       color={'auto'}>{children}</TextColor>
+        </span>
     );
 }

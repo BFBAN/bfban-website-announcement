@@ -1,0 +1,13 @@
+.highlight {
+    position: relative;
+}
+
+.highlight:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgba(248, 230, 171, .8);
+}
