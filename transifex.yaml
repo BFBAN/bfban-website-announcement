@@ -5,28 +5,36 @@ git:
       source_language: zh-CN
       source_file: 'i18n/zh-CN/docusaurus-theme-classic/navbar.json'
       translation_files_expression: 'i18n/<lang>/docusaurus-theme-classic/navbar.json'
+      content:
+        - message
     - filter_type: file
       file_format: KEYVALUEJSON
       source_language: zh-CN
       source_file: 'i18n/zh-CN/docusaurus-theme-classic/footer.json'
       translation_files_expression: 'i18n/<lang>/docusaurus-theme-classic/footer.json'
-
+      content:
+        - message
     - filter_type: file
       file_format: KEYVALUEJSON
       source_language: zh-CN
       source_file: 'i18n/zh-CN/docusaurus-plugin-content-blog-main/options.json'
       translation_files_expression: 'i18n/<lang>/docusaurus-plugin-content-blog-main/options.json'
+      content:
+        - message
     - filter_type: file
       file_format: KEYVALUEJSON
       source_language: zh-CN
       source_file: 'i18n/zh-CN/docusaurus-plugin-content-blog-precepts/options.json'
       translation_files_expression: 'i18n/<lang>/docusaurus-plugin-content-blog-precepts/options.json'
-
+      content:
+        - message
     - filter_type: file
       file_format: KEYVALUEJSON
       source_language: zh-CN
       source_file: 'i18n/zh-CN/code.json'
       translation_files_expression: 'i18n/<lang>/code.json'
+      content:
+        - message
 
   settings:
     pr_branch_name: tx_translations_<br_unique_id>
