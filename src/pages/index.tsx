@@ -153,7 +153,7 @@ export default function Home(): React.ReactElement {
                                         <div className="card-body">
                                             <Link href="/precepts/tags/user-policy" target="_self">
                                                 <h3 className="fs-2 text-body-emphasis">
-                                                    <Translate id="user-policy.title">用户守则</Translate>
+                                                    <Translate id="user-policy.title"></Translate>
                                                 </h3>
                                             </Link>
                                             <p>
@@ -162,7 +162,7 @@ export default function Home(): React.ReactElement {
                                               </span>
                                             </p>
                                             <Translate
-                                                id="user-policy.description">平台对于站内违规行为规定以及处罚评判</Translate>
+                                                id="user-policy.description"></Translate>
                                         </div>
                                     </div>
                                 </div>
