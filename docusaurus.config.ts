@@ -19,18 +19,18 @@ const config: Config = {
     onBrokenMarkdownLinks: 'ignore',
 
     i18n: {
-        defaultLocale: 'zh',
-        locales: ['zh', 'en', 'ja'],
+        defaultLocale: 'zh-CN',
+        locales: ['zh-CN', 'en-US', 'ja-JP'],
         localeConfigs: {
-            en: {
+            'en-US': {
                 label: 'English',
                 path: 'en-US',
             },
-            zh: {
+            'zh-CN': {
                 label: '中文',
                 path: 'zh-CN',
             },
-            ja: {
+            'ja-JP': {
                 label: '日本语',
                 path: 'ja-JP',
             },
@@ -79,6 +79,18 @@ const config: Config = {
     ],
 
     plugins: [
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+                remarkPlugins: [
+                    [remarkGFM, {singleTilde: false}],
+                    require('remark-breaks'),
+                ],
+                editUrl: 'https://github.com/BFBAN/bfban-website-announcement/edit/main/',
+            },
+        ],
         [
             '@docusaurus/plugin-sitemap',
             {
@@ -174,6 +186,7 @@ const config: Config = {
                 {href: 'https://bfban.com', target: '_self', label: 'mainWebsite', position: 'left'},
                 {to: '/precepts', label: 'precepts', position: 'left'},
                 {to: '/blog', label: 'blog', position: 'left'},
+                {to: '/docs', label: 'docs', position: 'left'},
                 {
                     type: 'localeDropdown',
                     position: 'right',

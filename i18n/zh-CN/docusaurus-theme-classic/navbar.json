@@ -18,5 +18,9 @@
   "item.label.blog": {
     "message": "公告",
     "description": "Navbar item with label blog"
+  },
+  "item.label.docs": {
+    "message": "文档",
+    "description": "Navbar item with label docs"
   }
 }

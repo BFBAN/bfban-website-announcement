@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.defaultSidebar.category.dev": {
+    "message": "📚 开发者",
+    "description": "The label for category dev in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.backend": {
+    "message": "后端",
+    "description": "The label for category backend in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.front": {
+    "message": "前端",
+    "description": "The label for category front in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.translation": {
+    "message": "翻译",
+    "description": "The label for category translation in sidebar defaultSidebar"
+  }
+}

@@ -207,6 +207,10 @@ nav.sidebar_brwN ul a:hover:after {
     text-indent: 2rem;
 }
 
+.markdown p img {
+    margin-left: -2rem;
+}
+
 .blog-tags b {
     color: rgb(from var(--bs-body-color) r g b / .2) !important;
     font-size: 15px;
@@ -258,4 +262,12 @@ nav.sidebar_brwN ul a:hover:after {
         border: none;
         box-shadow: none !important;
     }
+}
+
+.docSidebarContainer_RSuS {
+    border: none !important;
+}
+
+.docItemCol_VOVn {
+
 }

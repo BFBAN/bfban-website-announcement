@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.defaultSidebar.category.dev": {
+    "message": "Dev",
+    "description": "The label for category dev in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.backend": {
+    "message": "Backend",
+    "description": "The label for category backend in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.front": {
+    "message": "Frontend",
+    "description": "The label for category front in sidebar defaultSidebar"
+  }
+}
