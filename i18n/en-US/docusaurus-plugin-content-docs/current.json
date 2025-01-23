@@ -14,5 +14,9 @@
   "sidebar.defaultSidebar.category.front": {
     "message": "Frontend",
     "description": "The label for category front in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.translation": {
+    "message": "Translation",
+    "description": "The label for category translation in sidebar defaultSidebar"
   }
 }

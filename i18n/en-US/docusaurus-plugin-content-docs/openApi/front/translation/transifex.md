@@ -1,8 +1,6 @@
 ---
 title: Transifex Translation Process (EN)
-parent: front
 ---
-
 
 Thank you for your interest in website translation, please be sure to read some conditions you need to know before participating in translation contributions.
 
