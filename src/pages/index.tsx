@@ -27,9 +27,9 @@ export default function Home(): React.ReactElement {
 
                 {/*Main Row S*/}
                 <div className="container">
-                    <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-2 py-5">
-                        <div className="col h-100">
-                            <div className="rounded-4 feature bg-gradient card">
+                    <div className="row align-items-stretch row-cols-1 row-cols-lg-3 g-2 py-5">
+                        <div className="col">
+                            <div className="rounded-4 feature bg-gradient card h-100">
                                 <div className="card-body">
                                     <div
                                         className="feature-icon d-inline-flex align-items-center justify-content-start fs-1 mb-3">
@@ -48,7 +48,7 @@ export default function Home(): React.ReactElement {
                                     </p>
                                 </div>
                                 <div className="card-footer">
-                                    <Link href="/precepts/tags/personnel" className="icon-link card-link">
+                                    <Link href="/precepts/tags/personnel" className="card-link">
                                         <Translate id="home.refer"></Translate>
                                         <i className="bi bi-arrow-right"></i>
                                     </Link>
@@ -56,7 +56,7 @@ export default function Home(): React.ReactElement {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="rounded-4 feature bg-gradient card">
+                            <div className="rounded-4 feature bg-gradient card h-100">
                                 <div className="card-body">
                                     <div
                                         className="feature-icon d-inline-flex align-items-center justify-content-start fs-1 mb-3">
@@ -76,15 +76,15 @@ export default function Home(): React.ReactElement {
                                     </p>
                                 </div>
                                 <div className="card-footer">
-                                    <Link href="/precepts/tags/precepts" className="icon-link card-link">
+                                    <Link href="/precepts/tags/precepts" className="card-link">
                                         <Translate id="home.refer"></Translate>
                                         <i className="bi bi-arrow-right"></i>
                                     </Link>
                                 </div>
                             </div>
                         </div>
-                        <div className="col h-100">
-                            <div className="rounded-4 feature bg-gradient  card">
+                        <div className="col">
+                            <div className="rounded-4 feature bg-gradient card h-100">
                                 <div className="card-body">
                                     <div
                                         className="feature-icon d-inline-flex align-items-center justify-content-start fs-1 mb-3">
@@ -103,7 +103,7 @@ export default function Home(): React.ReactElement {
                                     </p>
                                 </div>
                                 <div className="card-footer">
-                                    <Link href="/precepts/tags/conduct" className="icon-link card-link">
+                                    <Link href="/precepts/tags/conduct" className="card-link">
                                         <Translate id="home.refer"></Translate>
                                         <i className="bi bi-arrow-right"></i>
                                     </Link>
@@ -115,114 +115,81 @@ export default function Home(): React.ReactElement {
                 {/*Main Row E*/}
 
                 <div className="container mb-5">
-                    <div className="row row-cols-2 align-items-stretch">
-                        <div className="col-12 col-sm-12 col-lg-6 mb-3">
-                            <div className="card">
-                                <div className="row g-0 h-100">
-                                    <div
-                                        className="col-3 align-content-center justify-items-center text-center"
-                                        style={{backgroundColor: 'var(--ifm-color-primary)'}}>
-                                        <i className="bi bi-eyeglasses fs-1 text-white"></i>
-                                    </div>
-                                    <div className="col-8">
-                                        <div className="card-body">
-                                            <Link href="/precepts/tags/privacy-policy" target="_self">
-                                                <h3 className="fs-2 text-body-emphasis">
-                                                    <Translate id="privacy-policy.title"></Translate>
-                                                </h3>
-                                            </Link>
-                                            <p>
-                                            <span className="badge rounded-pill text-bg-danger"><Translate
-                                                id="home.updata"></Translate></span>
-                                            </p>
-                                            <Translate id="privacy-policy.description"></Translate>
+                    <div className="row align-items-stretch row-cols-2">
+                        {[{
+                            icon: 'bi-eyeglasses',
+                            value: 'privacy-policy',
+                            url: '/precepts/tags/privacy-policy',
+                            updata: {
+                                title: 'v4'
+                            },
+                        }, {
+                            icon: 'bi-people-fill',
+                            value: 'user-policy',
+                            url: '/precepts/tags/user-policy',
+                            text: {
+                                value: 'v1'
+                            }
+                        }, {
+                            icon: 'bi-palette',
+                            value: 'exterior-design',
+                            url: '/precepts/tags/exterior-design',
+                            updata: {
+                                title: 'v4'
+                            },
+                        }, {
+                            icon: 'bi-palette',
+                            value: 'recruitment-criteria',
+                            url: '/precepts/tags/recruitment-criteria',
+                            text: {
+                                value: 'v1'
+                            }
+                        }].map(i => (
+                            <div className="col-12 col-sm-12 col-lg-6 mb-3">
+                                <div className="card h-100">
+                                    <div className="row h-100">
+                                        <div
+                                            className="col-3 align-content-center text-center"
+                                            style={{backgroundColor: 'var(--ifm-color-primary)', marginLeft: '16px'}}>
+                                            <i className={`bi ${i.icon} ml-5 fs-1 text-white`}></i>
+                                        </div>
+                                        <div className="col-8">
+                                            <div className="card-body">
+                                                <Link href={i.url} target="_self">
+                                                    <h3 className="fs-2 text-body-emphasis">
+                                                        <Translate id={`${i.value}.title`}></Translate>
+                                                    </h3>
+                                                </Link>
+                                                <p>
+                                                    {i.updata ? (
+                                                        <span className="badge rounded-pill text-bg-danger"><Translate
+                                                            id="home.updata"></Translate></span>
+                                                    ) : null}
+                                                    {i.text ? (
+                                                        <span
+                                                            className="badge rounded-pill text-bg-dark">{i.text.value}</span>
+                                                    ) : null}
+                                                </p>
+                                                <Translate id={`${i.value}.description`}></Translate>
+
+                                                <span className="p-1">
+                                                    <Link href={i.url}>
+                                                        <Translate id="home.refer"></Translate>
+                                                        <i className="bi bi-arrow-right"></i>
+                                                    </Link>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-12 col-sm-12 col-lg-6 mb-3">
-                            <div className="card">
-                                <div className="row g-0 h-100">
-                                    <div
-                                        className="col-3 align-content-center justify-items-center text-center"
-                                        style={{backgroundColor: 'var(--ifm-color-primary)'}}>
-                                        <i className="bi bi-people-fill fs-1 text-white"></i>
-                                    </div>
-                                    <div className="col-8">
-                                        <div className="card-body">
-                                            <Link href="/precepts/tags/user-policy" target="_self">
-                                                <h3 className="fs-2 text-body-emphasis">
-                                                    <Translate id="user-policy.title"></Translate>
-                                                </h3>
-                                            </Link>
-                                            <p>
-                                              <span className="badge rounded-pill text-bg-dark">
-                                                  v1
-                                              </span>
-                                            </p>
-                                            <Translate
-                                                id="user-policy.description"></Translate>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12 col-sm-12 col-lg-6 mb-3">
-                            <div className="card">
-                                <div className="row g-0 h-100">
-                                    <div
-                                        className="col-3 align-content-center justify-items-center text-center"
-                                        style={{backgroundColor: 'var(--ifm-color-primary)'}}>
-                                        <i className="bi bi-palette d-block fs-1 text-white"></i>
-                                    </div>
-                                    <div className="col-8">
-                                        <div className="card-body">
-                                            <Link href="/precepts/tags/exterior-design" target="_self">
-                                                <h3 className="fs-2 text-body-emphasis">
-                                                    <Translate id="exterior-design.title"></Translate>
-                                                </h3>
-                                            </Link>
-                                            <p>
-                                            <span className="badge rounded-pill text-bg-danger"><Translate
-                                                id="home.updata"></Translate></span>
-                                            </p>
-                                            <Translate id="exterior-design.description"></Translate>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12 col-sm-12 col-lg-6 mb-3">
-                            <div className="card">
-                                <div className="row g-0 h-100">
-                                    <div
-                                        className="col-3 align-content-center justify-items-center text-center"
-                                        style={{backgroundColor: 'var(--ifm-color-primary)'}}>
-                                        <i className="bi bi-people-fill fs-1 text-white"></i>
-                                    </div>
-                                    <div className="col-8">
-                                        <div className="card-body">
-                                            <Link href="/precepts/tags/recruitment-criteria" target="_self">
-                                                <h3 className="fs-2 text-body-emphasis">
-                                                    <Translate id="recruitment-criteria.title"></Translate>
-                                                </h3>
-                                            </Link>
-                                            <p>
-                                              <span className="badge rounded-pill text-bg-dark">
-                                                  v1
-                                              </span>
-                                            </p>
-                                            <Translate id="recruitment-criteria.description"></Translate>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
 
-                <GithubContributorsWidget/>
+                <div className="text-center">
+                    <GithubContributorsWidget/>
+                </div>
             </main>
         </Layout>
     );

@@ -12,7 +12,7 @@ import createIcon from './hocs/createIcon';
 import React, {type ReactNode} from "react";
 import clsx from "clsx";
 import {ThemeClassNames} from "@docusaurus/theme-common";
-import BiliBiliShareButton from "@site/src/theme/BlogPostItem/Footer/Share/BiliBiliShareButton";
+import BiliBiliShareButton from "@site/src/theme/Share/BiliBiliShareButton";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const BiliBiliIcon = createIcon({

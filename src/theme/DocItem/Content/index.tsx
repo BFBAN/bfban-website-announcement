@@ -5,7 +5,7 @@ import {useDoc} from '@docusaurus/plugin-content-docs/client';
 import Heading from '@theme/Heading';
 import MDXContent from '@theme/MDXContent';
 import type {Props} from '@theme/DocItem/Content';
-import ShareWidget from "@site/src/theme/BlogPostItem/Footer/Share";
+import ShareWidget from "@site/src/theme/Share";
 
 /**
  Title can be declared inside md content or declared through
@@ -36,8 +36,9 @@ export default function DocItemContent({children}: Props): ReactNode {
                     <Heading as="h1">{syntheticTitle}</Heading>
                 </header>
             )}
-            <ShareWidget/>
-            <br/>
+            <div className="mb-2">
+                <ShareWidget/>
+            </div>
             <MDXContent>{children}</MDXContent>
         </div>
     );

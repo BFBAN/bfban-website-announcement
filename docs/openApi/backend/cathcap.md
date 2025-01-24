@@ -3,6 +3,8 @@ title: 验证器
 parent: dev
 ---
 
+## 介绍
+
 提供二种验证器，分别是`svg`和`turnstile`，`svg`是常规矢量图形，`turnstile`是cloudflare turnstile机器人验证器，第三方应该选择`svg`作为验证手段。
 
 ## 验证

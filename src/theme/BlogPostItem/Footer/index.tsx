@@ -5,7 +5,7 @@ import {ThemeClassNames} from '@docusaurus/theme-common';
 import EditMetaRow from '@theme/EditMetaRow';
 import TagsListInline from '@theme/TagsListInline';
 import ReadMoreLink from '@theme/BlogPostItem/Footer/ReadMoreLink';
-import ShareWidget from "@site/src/theme/BlogPostItem/Footer/Share";
+import ShareWidget from "@site/src/theme/Share";
 
 export default function BlogPostItemFooter(): ReactNode {
     const {metadata, isBlogPostPage} = useBlogPost();

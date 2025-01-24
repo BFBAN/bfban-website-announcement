@@ -1,5 +1,8 @@
 ---
 title: 👏🏻 欢迎
+nav_order: 1
+sidebar_position: 1
+hide_table_of_contents: true
 ---
 
 ## 什么是BFBAN

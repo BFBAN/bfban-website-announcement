@@ -88,6 +88,7 @@ const config: Config = {
                     [remarkGFM, {singleTilde: false}],
                     require('remark-breaks'),
                 ],
+                sidebarPath: './sidebars.ts',
                 editUrl: 'https://github.com/BFBAN/bfban-website-announcement/edit/main/',
             },
         ],
@@ -186,7 +187,12 @@ const config: Config = {
                 {href: 'https://bfban.com', target: '_self', label: 'mainWebsite', position: 'left'},
                 {to: '/precepts', label: 'precepts', position: 'left'},
                 {to: '/blog', label: 'blog', position: 'left'},
-                {to: '/docs', label: 'docs', position: 'left'},
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'docsSidebar',
+                    position: 'left',
+                    label: 'docs',
+                },
                 {
                     type: 'localeDropdown',
                     position: 'right',

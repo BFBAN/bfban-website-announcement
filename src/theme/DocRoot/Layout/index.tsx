@@ -14,7 +14,7 @@ export default function DocRootLayout({children}: Props): ReactNode {
     return (
         <div className={styles.docsWrapper}>
             <BackToTopButton/>
-            <div className={clsx('container p-0', styles.docRoot)}>
+            <div className={clsx('container p-0 pt-2', styles.docRoot)}>
                 {sidebar && (
                     <DocRootLayoutSidebar
                         sidebar={sidebar.items}

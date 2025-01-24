@@ -6,7 +6,7 @@ import {
     useDocRootMetadata,
 } from '@docusaurus/plugin-content-docs/client';
 import DocRootLayout from '@theme/DocRoot/Layout';
-import NotFoundContent from '@theme/NotFound/Content';
+import NotFoundContent from '@site/src/theme/NotFound/Content';
 import type {Props} from '@theme/DocRoot';
 
 export default function DocRoot(props: Props): ReactNode {

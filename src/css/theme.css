@@ -22,6 +22,7 @@
     --ifm-container-width: 1320px;
     --ifm-container-width-sm: 1320px;
     --ifm-container-width-xl: 1450px;
+    --ifm-breadcrumb-item-background-active: rgba(0, 0, 0, 0);
     --ifm-menu-color-background-active: rgb(from var(--ifm-color-primary-darker) r g b / .2);
 }
 

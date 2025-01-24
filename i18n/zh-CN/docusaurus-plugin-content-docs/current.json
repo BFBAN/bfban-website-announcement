@@ -3,20 +3,24 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.defaultSidebar.category.dev": {
+  "sidebar.docsSidebar.category.dev": {
     "message": "📚 开发者",
-    "description": "The label for category dev in sidebar defaultSidebar"
+    "description": "The label for category dev in sidebar docsSidebar"
   },
-  "sidebar.defaultSidebar.category.backend": {
+  "sidebar.docsSidebar.category.backend": {
     "message": "后端",
-    "description": "The label for category backend in sidebar defaultSidebar"
+    "description": "The label for category backend in sidebar docsSidebar"
   },
-  "sidebar.defaultSidebar.category.front": {
+  "sidebar.docsSidebar.category.front": {
     "message": "前端",
-    "description": "The label for category front in sidebar defaultSidebar"
+    "description": "The label for category front in sidebar docsSidebar"
   },
-  "sidebar.defaultSidebar.category.translation": {
+  "sidebar.docsSidebar.category.translation": {
     "message": "翻译",
-    "description": "The label for category translation in sidebar defaultSidebar"
+    "description": "The label for category translation in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.apply": {
+    "message": "📮 申请",
+    "description": "The label for category translation in sidebar docsSidebar"
   }
 }
