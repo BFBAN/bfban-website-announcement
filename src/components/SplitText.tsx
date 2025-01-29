@@ -10,7 +10,6 @@ const SplitText = ({
                        easing = 'easeOutCubic',
                        threshold = 0.1,
                        rootMargin = '-100px',
-                       textAlign = 'center',
                    }) => {
     const words = text.split(' ').map(word => word.split(''));
 
@@ -55,7 +54,13 @@ const SplitText = ({
         <span
             ref={ref}
             className={`split-parent ${className}`}
-            style={{textAlign, overflow: 'hidden', display: 'inline', whiteSpace: 'normal', wordWrap: 'break-word'}}>
+            style={{
+                textAlign: 'center',
+                overflow: 'hidden',
+                display: 'inline',
+                whiteSpace: 'normal',
+                wordWrap: 'break-word'
+            }}>
             {words.map((word, wordIndex) => (
                 <span key={wordIndex} style={{display: 'inline-block', whiteSpace: 'nowrap'}}>
           {word.map((letter, letterIndex) => {
@@ -70,8 +75,7 @@ const SplitText = ({
                           ...springs[index],
                           display: 'inline-block',
                           willChange: 'transform, opacity',
-                      }}
-                  >
+                      }}>
                       {letter}
                   </animated.span>
               );
