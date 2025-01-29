@@ -5,7 +5,7 @@ import {useBlogPost} from '@docusaurus/plugin-content-blog/client';
 import type {Props} from '@theme/BlogPostItem/Header/Title';
 
 import styles from './styles.module.css';
-import MDXContent from "@theme/MDXContent";
+import SplitText from "@site/src/components/SplitText";
 
 export default function BlogPostItemHeaderTitle({className}: Props): ReactNode {
     const {metadata, isBlogPostPage} = useBlogPost();
@@ -13,7 +13,10 @@ export default function BlogPostItemHeaderTitle({className}: Props): ReactNode {
     const TitleHeading = isBlogPostPage ? 'h1' : 'h2';
     return (
         <TitleHeading className={clsx(styles.title, className)}>
-            {isBlogPostPage ? <MDXContent>{title}</MDXContent> : <Link to={permalink}>{title}</Link>}
+            {isBlogPostPage ? <SplitText text={title}
+                                         delay={5}
+                                         easing="easeOutCubic"
+                                         rootMargin="-2px"></SplitText> : <Link to={permalink}>{title}</Link>}
         </TitleHeading>
     );
 }

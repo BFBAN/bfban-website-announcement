@@ -6,6 +6,7 @@ import Heading from '@theme/Heading';
 import MDXContent from '@theme/MDXContent';
 import type {Props} from '@theme/DocItem/Content';
 import ShareWidget from "@site/src/theme/Share";
+import SplitText from "@site/src/components/SplitText";
 
 /**
  Title can be declared inside md content or declared through
@@ -33,7 +34,12 @@ export default function DocItemContent({children}: Props): ReactNode {
         <div className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
             {syntheticTitle && (
                 <header>
-                    <Heading as="h1">{syntheticTitle}</Heading>
+                    <Heading as="h1">
+                        <SplitText text={syntheticTitle}
+                                   delay={5}
+                                   easing="easeOutCubic"
+                                   rootMargin="-2px"></SplitText>
+                    </Heading>
                 </header>
             )}
             <div className="mb-2">

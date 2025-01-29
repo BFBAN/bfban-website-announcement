@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import LogoWall from "@site/src/components/_UsersWrap";
 
 async function getData() {
     return await fetch('https://api.github.com/repos/bfban/bfban-website-announcement/contributors').then(r => r.json())
@@ -34,10 +35,13 @@ function GithubContributorsWidget() {
 
     return (
         <div className="container mt-5 mb-5">
-            {data.length >= 0 ? data.map(item => (
-                <img className="border rounded-5 mr-3" style={{width: 40, height: 40}} src={item.avatar_url}
-                     key={item.id}/>
-            )) : null}
+            <LogoWall
+                items={data.map(i => ({
+                    imgUrl: i.avatar_url,
+                    altText: i.id,
+                }))}
+                direction='horizontal'
+                pauseOnHover={true}></LogoWall>
         </div>
     );
 }

@@ -13,6 +13,7 @@
     --ifm-color-primary-light: #f1e541;
     --ifm-color-primary-lighter: #f2e74e;
     --ifm-color-primary-lightest: #f5ec75;
+    --ifm-color-secondary: #46108d;
     --docusaurus-highlighted-code-line-bg: #fff;
     --ifm-link-color: rgb(from var(--ifm-color-primary) calc(r) calc(g) calc(b + 50) / 1);
     --ifm-footer-background-color: var(--docusaurus-highlighted-code-line-bg);
