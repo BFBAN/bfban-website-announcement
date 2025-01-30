@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import LogoWall from "@site/src/components/_UsersWrap";
+import LogoWall from "@site/src/components/_UsersWrap/index";
 
 async function getData() {
     return await fetch('https://api.github.com/repos/bfban/bfban-website-announcement/contributors').then(r => r.json())
