@@ -1,5 +1,5 @@
 import {useState} from "react";
-import "./LogoWall.css";
+import "LogoWall.css";
 
 function UserWall({
                       items = [],
