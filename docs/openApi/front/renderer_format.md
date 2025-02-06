@@ -8,9 +8,7 @@ parent: front
 在BFBAN评论和举报提交的内容，都在渲染器工作范围，它将过滤危险标签以及转换工作，渲染器包含2部分，前端和后端都会验证它们。
 
 - 提交的文本内容应该遵循HTML结构
--
-
-渲染器是以html基础开发，混合其他语法实现，详细查阅[渲染器本体](https://github.com/BFBAN/bfban-website/blob/master/front/src/components/Html.vue)，[后端过滤](https://github.com/BFBAN/bfban-website/blob/master/backend/lib/user.js)
+- 渲染器是以html基础开发，混合其他语法实现，详细查阅[渲染器本体](https://github.com/BFBAN/bfban-website/blob/master/front/src/components/Html.vue)，[后端过滤](https://github.com/BFBAN/bfban-website/blob/master/backend/lib/user.js)
 
 ### 支持HTML标签
 
