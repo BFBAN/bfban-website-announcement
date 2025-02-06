@@ -73,7 +73,7 @@ parent: front
 
 ----
 
-#### 标签
+### 表情
 
 表情有`[]`组成，完整的表情符合是这样:
 
@@ -86,6 +86,15 @@ parent: front
 ```
 
 emoji表示分类，grinning则是表情id
+
+### 自定义表情
+
+```html
+[custom-network|{url}]
+<!-- OR -->
+[custom-network-https|{url}]
+[custom-network-http|{url}]
+```
 
 ----
 
